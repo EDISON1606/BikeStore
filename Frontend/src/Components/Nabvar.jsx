@@ -1,10 +1,12 @@
 import React from "react";
-import Logo from "../Img/Logo.png"
+import LogoB from "../Img/Logo.png"
+import Logoin from "../Img/ingresar.png"
+import Logomeg from "../Img/megusta.png"
 
 export default function Nabvar() {
     return (
         <nav className="navbar">
-        <img src={Logo} id="logo" />
+        <img src={LogoB} id="logo" />
             <input type="checkbox" id="toggler"></input>
             <label for="toggler"><i><img id="imgtoggler" src="./Img/NavBar/toggler.png" /></i></label>
             <div className="menu">
@@ -12,19 +14,9 @@ export default function Nabvar() {
                     <li>
                         <a>Atencion al cliente</a>
                     </li>
-                    <li>
-                        <select className="categorias" onchange="redireccionamiento(event);">
-                            <option  className="opcion" value="" >CATEGORIAS</option>
-                            <option className="A" value="" disabled="true"></option>
-                            <option  className="opcion" value="./Pages/Peliculas.html">Peliculas</option>
-                            <option className="A" value="" disabled="true"></option>
-                            <option  className="opcion" value="./Pages/Television.html">Television</option>
-                            <option className="A" value="" disabled="true"></option>
-                            <option  className="opcion" value="./Pages/Populares.html">Populares</option>
-                            <option className="A" value="" disabled="true"></option>
-                            <option  className="opcion" value="./Pages/Todo.html">Todo</option>
-                        </select>
-                    </li>
+                    <img src={Logoin} id="logoin"  />
+                    <img src={Logomeg} id="logomeg"  />
+                  
                     <li className="listacerca">
                         <a href="./Pages/acerca_de.html"> ACERCA DE</a>
                     </li>

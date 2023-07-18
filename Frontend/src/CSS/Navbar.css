@@ -13,7 +13,16 @@
     height: 65px;
     
 }
-
+#logoin{
+    background-image:url(../Img/NavBar/ingresar.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
 .navbar a{
     text-decoration: none;
     color: white;
@@ -50,9 +59,19 @@
     background-color: transparent;
     background-position: center;
     background-size: cover;
-    height: 80px;
-    width: 80px;
+    height: 85px;
+    width: 85px;
     margin-top : -8px;
+}
+#logomeg{
+    background-image:url(../Img/NavBar/Logo.jpeg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    margin-top : -5px;
 }
 
 
