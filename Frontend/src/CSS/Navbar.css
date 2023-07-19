@@ -11,9 +11,69 @@
     justify-content: space-between;
     background-color: #212121;
     height: 65px;
-    
+}
+.ini:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.meg:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.car:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.Contener-busqueda{
+    width: 50%;
+}
+.Barra-buscas{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#Buscar {
+    width: 80%;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 13px;
+}
+::placeholder{
+    font-family: Verdana;
+    font-size: 0.75em;
+    opacity: 0.7 ;
+    align-items: center;
+}
+#btn_buscar {
+    border-color: black;
+    border-radius: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+   width: 38px;
+    cursor: pointer;
+    border: none;
 }
 #logoin{
+    background-image:url(../Img/NavBar/ingresar.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+#Carrito{
     background-image:url(../Img/NavBar/ingresar.png);
     background-repeat: no-repeat;
     background-color: transparent;
@@ -47,6 +107,7 @@
     gap: 25px;
     align-items: center;
     margin-top: 22px;
+    margin-right: 25px;
 }
 
 #toggler, .navbar label{
@@ -62,6 +123,7 @@
     height: 85px;
     width: 85px;
     margin-top : -8px;
+    margin-left: 8px;
 }
 #logomeg{
     background-image:url(../Img/NavBar/Logo.jpeg);
@@ -71,7 +133,8 @@
     background-size: cover;
     height: 25px;
     width: 25px;
-    margin-top : -5px;
+    margin-top : 0px;
+    cursor: pointer;
 }
 
 
@@ -94,7 +157,6 @@
 .A{
     background-color: #001d52;
     opacity: 0;
-    
 }
 .A:hover {
     background-color: #001d52;
