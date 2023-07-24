@@ -1,11 +1,22 @@
 import React from "react";
-import LogoB from "../Img/Logo.png"
-import Logoin from "../Img/ingresar.png"
-import Logomeg from "../Img/megusta.png"
-import Carrito from "../Img/Carrito.png"
-import Lupa from "../Img/lupa.png"
+import LogoB from "../Img/Logo.png";
+import Logoin from "../Img/ingresar.png";
+import Logomeg from "../Img/megusta.png";
+import Carrito from "../Img/Carrito.png";
+import Lupa from "../Img/lupa.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Nabvar() {
+
+    const navigate = useNavigate();
+
+    const redireccionar = ()=>{
+
+        navigate("/Inicio");
+    }
+
+    
+
     return (
         <nav className="navbar">
         <img src={LogoB} id="logo" />
@@ -20,15 +31,21 @@ export default function Nabvar() {
                     <li className="aten">
                         <a>Atencion al cliente</a>
                     </li>
-                    <li className="ini">
-                    <img src={Logoin} id="logoin"  />
-                    </li>
+                    <div className="ini">
+                    <li><a href="#"><img src={Logoin} alt="inicio/registro" id="logoin"/></a></li>
+                    <li><select id="" onChange={redireccionar}>
+                        <option value="0"></option>
+                        <option className="inicio">Inicio</option>
+                        <option value="2">Registro</option>
+                        </select></li>
+                      </div>
                     <li className="meg">
                     <img src={Logomeg} id="logomeg"  />
                     </li>
                     <li className="car">
-                    <img src={Carrito} id="Carrito"  />
+                    <a href="/Inicio" ><img src={Carrito} id="Carrito"  /></a>
                     </li>
+                  
                 </ul>
             </div>
     </nav>
