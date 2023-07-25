@@ -6,23 +6,21 @@ const Iniciosesion = () => {
       <div className="formulario">
       <h1>Inicio de sesion</h1>
       <form method="post">
-        <div className="inicioS">
-          <input type="text" required/> 
+        <div className="username">
+          <input type="text" placeholder=' ' required/> 
             <label>Correo electronico</label>
         </div>
-        <div className="contraseña">
-          <input type="password" required/>
+        <div className="username">
+          <input type="password" placeholder=' ' required/>
             <label>Contraseña</label>
         </div>
-        <div className='recordar'>Restablecer contraseña</div>
-        <input type="submit" value="Iniciar"/>
+        <div className='recordar'><a href="#">Restablecer contraseña</a></div>
+        <input type="submit" value="Ingresar"/>
         <div className='Registrarse'>
-          <a href="#">Registrarse</a>
+        ¿Aun no tienes cuenta? <a href="#">Registrate</a>
         </div>
       </form>
     </div>
-   
-    
   )
 }
 
