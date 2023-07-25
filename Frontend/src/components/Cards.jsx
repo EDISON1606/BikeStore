@@ -2,6 +2,9 @@ import React from 'react'
 import Bici from '../img/Bici 33.png'
 import Bici1 from'../img/bici1 31.png'
 import Bici2 from'../img/bici2 31.png'
+import flecha1 from '../img/flecha-correcta.png'
+import flecha2 from '../img/flecha-izquierda.png'
+
  export default function Cards (){
     return(
         <div className='Principal'>
@@ -60,9 +63,44 @@ import Bici2 from'../img/bici2 31.png'
                 </select>
             </li>
             <h1>Precios</h1>
-
+            <div className='precios'>
+            <input type="number" id='precio' name='precio' />
+            <h5>Min</h5>
+            <input type="number" />
+            <h5>Max</h5>
+            </div>
         </ul>
     </div>
+    <div className='opcion'>
+    <li>
+        <h4>Ordenado por</h4>
+                <select className="recomendado" onchange="redireccionamiento(event);">
+                    <option  className="opcion" value="" >Recomendados</option>
+                    <option className="A" value="" disabled="true"></option>
+                    <option  className="opcion" value="">precio de menor a mayor </option>
+                    <option className="A" value="" disabled="true"></option>
+                    <option  className="opcion" value="">precio de mayor a menor</option>
+                    <option className="A" value="" disabled="true"></option>
+                    <option  className="opcion" value="">Marca</option>
+                    <option className="A" value="" disabled="true"></option>
+                    <option  className="opcion" value="">Nuevo Producto</option>
+                    <option className="A" value="" disabled="true"></option>
+                    <option  className="A" value="">Los mejore evaluados</option>
+                </select>
+            </li>
+            <div class="pagination">
+            <h3>Pagina:</h3>
+        <button id="btn-inicio"><img src={flecha2} /></button>
+        <div className='btn-selector'>
+        <input type="text" value="1" id="numeropagina" disabled="true"></input>
+        </div>
+        <input type="text" value="2" id="numeropagina" disabled="true"></input>
+        <input type="text" value="3" id="numeropagina" disabled="true"></input>
+        <input type="text" value="64" id="numeropagina" disabled="true"></input>
+        <button id="btn-final"><img src={flecha1} /></button>
+    </div>
+            </div>
+   
     <div className='products'>
     <div className='cards-products'>
      <img src={Bici} id='bici'/>
