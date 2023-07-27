@@ -11,7 +11,7 @@ import flecha2 from '../img/flecha-izquierda.png'
         <div className="menu">
         <ul className="list">
             <li>
-                <h1>Categorias</h1>
+                <h6>Categorias</h6>
             </li>
             <li>
                 <select className="categorias" onchange="redireccionamiento(event);">
@@ -62,7 +62,7 @@ import flecha2 from '../img/flecha-izquierda.png'
                     <option  className="A" value="">2x Transmision</option>
                 </select>
             </li>
-            <h1>Precios</h1>
+            <h6>Precios</h6>
             <div className='precios'>
             <input type="number" id='precio' name='precio' />
             <h5>Min</h5>
@@ -90,20 +90,20 @@ import flecha2 from '../img/flecha-izquierda.png'
             </li>
             <div class="pagination">
             <h3>Pagina:</h3>
-        <button id="btn-inicio"><img src={flecha2} /></button>
+        <button className="btn-inicio"><img src={flecha2} /></button>
         <div className='btn-selector'>
         <input type="text" value="1" id="numeropagina" disabled="true"></input>
         </div>
         <input type="text" value="2" id="numeropagina" disabled="true"></input>
         <input type="text" value="3" id="numeropagina" disabled="true"></input>
         <input type="text" value="64" id="numeropagina" disabled="true"></input>
-        <button id="btn-final"><img src={flecha1} /></button>
+        <button className="btn-final"><img src={flecha1} /></button>
     </div>
             </div>
    
     <div className='products'>
     <div className='cards-products'>
-     <img src={Bici} id='bici'/>
+     <img src={Bici} className='bici'/>
      <h2>Bicicleta de montaña marlin 5  2022</h2>
      <p>Próximamente</p>
      <h3>$ 2.299.000</h3>
@@ -111,7 +111,7 @@ import flecha2 from '../img/flecha-izquierda.png'
  </div>
  
  <div className='cards-products'>
-     <img src={Bici1} id='bici'/>
+     <img src={Bici1} className='bici'/>
      <h2>Bicicleta Urbana FX 2 WSD DISC 2021</h2>
      <p>Próximamente</p>
      <h3>$ 1.890.000</h3>
@@ -119,14 +119,14 @@ import flecha2 from '../img/flecha-izquierda.png'
  </div>
 
  <div className='cards-products'>
-     <img src={Bici2} id='bici'/>
+     <img src={Bici2} className='bici'/>
      <h2>BICICLETA DE MONTAÑA FUEL EX 5</h2>
      <p>Próximamente</p>
      <h3>$ 8.490.000</h3>
      <button className='btn'>Agregar Carrito</button>
  </div>
  <div className='cards-products'>
-     <img src={Bici} id='bici'/>
+     <img src={Bici} className='bici'/>
      <h2>Bicicleta de montaña marlin 5  2022</h2>
      <p>Próximamente</p>
      <h3>$ 2.299.000</h3>
@@ -134,7 +134,7 @@ import flecha2 from '../img/flecha-izquierda.png'
  </div>
  
  <div className='cards-products'>
-     <img src={Bici1} id='bici'/>
+     <img src={Bici1} className='bici'/>
      <h2>Bicicleta Urbana FX 2 WSD DISC 2021</h2>
      <p>Próximamente</p>
      <h3>$ 1.890.000</h3>
@@ -142,14 +142,14 @@ import flecha2 from '../img/flecha-izquierda.png'
  </div>
 
  <div className='cards-products'>
-     <img src={Bici2} id='bici'/>
+     <img src={Bici2} className='bici'/>
      <h2>BICICLETA DE MONTAÑA FUEL EX 5</h2>
      <p>Próximamente</p>
      <h3>$ 8.490.000</h3>
      <button className='btn'>Agregar Carrito</button>
  </div>
  <div className='cards-products'>
-     <img src={Bici} id='bici'/>
+     <img src={Bici} className='bici'/>
      <h2>Bicicleta de montaña marlin 5  2022</h2>
      <p>Próximamente</p>
      <h3>$ 2.299.000</h3>
@@ -157,7 +157,7 @@ import flecha2 from '../img/flecha-izquierda.png'
  </div>
  
  <div className='cards-products'>
-     <img src={Bici1} id='bici'/>
+     <img src={Bici1} className='bici'/>
      <h2>Bicicleta Urbana FX 2 WSD DISC 2021</h2>
      <p>Próximamente</p>
      <h3>$ 1.890.000</h3>
@@ -165,7 +165,7 @@ import flecha2 from '../img/flecha-izquierda.png'
  </div>
 
  <div className='cards-products'>
-     <img src={Bici2} id='bici'/>
+     <img src={Bici2} className='bici'/>
      <h2>BICICLETA DE MONTAÑA FUEL EX 5</h2>
      <p>Próximamente</p>
      <h3>$ 8.490.000</h3>
