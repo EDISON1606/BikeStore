@@ -78,14 +78,18 @@ select{
     align-items: center;
 }
 #btn_buscar {
-    border-color: black;
+    background-color: transparent;
     border-radius: 100%;
     margin-top: 5px;
     margin-left: 5px;
     margin-bottom: 5px;
-   width: 38px;
+    width: 38px;
     cursor: pointer;
     border: none;
+}
+#btn_buscar img {
+ margin-left: -95px;
+ margin-top: 2px;
 }
 #logoin{
     background-image:url(../Img/NavBar/ingresar.png);
@@ -202,12 +206,16 @@ select{
 #imgtoggler{
     width: 35px;
     height: 35px;
-    margin: 10px;
+   margin-right: 20px;
+   margin-top: 16px;
 }
 
 #btntoggler:hover{
     border-radius: 10%;
     opacity: 0.8;
+}
+#toggler:active{
+    background-color: #00ff00;
 }
 
 .btnlupa{
@@ -226,4 +234,40 @@ select{
     cursor: pointer;
     opacity: 0.7;
     border-radius: 10%;
+}
+
+@media screen and (max-width: 754px){
+    
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+    }
+    
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+}
+
+@media screen and (max-width: 300px){
+
+    #imgtoggler{
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    }
+  
 }

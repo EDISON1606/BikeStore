@@ -4,6 +4,7 @@ import Logoin from "../Img/ingresar.png";
 import Logomeg from "../Img/megusta.png";
 import Carrito from "../Img/Carrito.png";
 import Lupa from "../Img/lupa.png";
+import Menu from "../Img/menu.png";
 import { useNavigate } from "react-router-dom";
 
 export default function Nabvar() {
@@ -26,6 +27,7 @@ export default function Nabvar() {
         <button id="btn_buscar" onclick="ejecutar()"> <img src={Lupa}></img></button>
     </div>
     </div>
+    <label for="toggler"><i><img id="imgtoggler" src={Menu} /></i></label>
             <div className="menu">
                 <ul className="list">
                     <li className="aten">
