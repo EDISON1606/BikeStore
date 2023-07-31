@@ -44,6 +44,9 @@ select{
     cursor: pointer;
     opacity: 0.7;
 }
+::option{
+    cursor: pointer;
+}
 .car:hover{
     cursor: pointer;
     opacity: 0.7;
@@ -81,15 +84,11 @@ select{
     background-color: transparent;
     border-radius: 100%;
     margin-top: 5px;
-    margin-left: 5px;
-    margin-bottom: 5px;
+    margin-left: -45px;
+    margin-top: 2px;
     width: 38px;
     cursor: pointer;
     border: none;
-}
-#btn_buscar img {
- margin-left: -95px;
- margin-top: 2px;
 }
 #logoin{
     background-image:url(../Img/NavBar/ingresar.png);
@@ -145,15 +144,14 @@ select{
 }
 
 #logo{
-    background-image:url(../Img/NavBar/Logo.jpeg);
     background-repeat: no-repeat;
     background-color: transparent;
     background-position: center;
     background-size: cover;
     height: 85px;
     width: 85px;
-    margin-top : -8px;
     margin-left: 8px;
+    cursor: pointer;
 }
 #logomeg{
     background-image:url(../Img/NavBar/Logo.jpeg);
@@ -197,26 +195,6 @@ select{
     opacity: 0.7;
 }
 
-#btntoggler{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-#imgtoggler{
-    width: 35px;
-    height: 35px;
-   margin-right: 20px;
-   margin-top: 16px;
-}
-
-#btntoggler:hover{
-    border-radius: 10%;
-    opacity: 0.8;
-}
-#toggler:active{
-    background-color: #00ff00;
-}
 
 .btnlupa{
     background-color: transparent;
@@ -235,8 +213,29 @@ select{
     opacity: 0.7;
     border-radius: 10%;
 }
-
-@media screen and (max-width: 754px){
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.icon3{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-top:-5px;
+    margin-right: 25px;
+}
+.logob{
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+@media screen and (max-width: 835px){
     
     .menu{
         width: 100%;
@@ -248,26 +247,149 @@ select{
         flex-direction: column;
         align-items: center;
         padding: 20px;
-
     }
-    
-    .navbar label{
-        display: inline-flex;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    #toggler:checked ~ .menu{
-        max-height: 100%;
-    }
+.icon3{
+    margin-right: 15px;
+}
+}
+@media(min-width: 834px){
+        .icon3{
+            display: none;
+        }
 }
 
-@media screen and (max-width: 300px){
-
-    #imgtoggler{
-        width: 30px;
-        height: 30px;
-        margin: 10px;
+@media screen and (max-width: 570px){
+    #logo{
+        width: 60px;
+        height: 60px;
+    margin-top: 15px;
+    }
+}
+@media screen and (max-width: 281px){
+    #logo{
+        width: 40px;
+        height: 40px;
+        margin-top: 23px;
     }
   
+    .icon3{
+        gap: 13px;
+        
+    }
+    #Buscar{
+        margin-top: 8px;
+        height: 1px;
+    }
+    .lupa{
+        width: 100px;
+    }
+    ::placeholder{
+        font-size:xx-small;
+    }
 }
+@media screen and (max-width: 465px){
+    .Contener-busqueda{
+        width: 30%;
+    }
+    #btn_buscar{
+        width: 15px;
+        height: 20px;
+        margin-left: -23px;
+        margin-top: 15px;
+    }
+    .lupa{
+        width: 15px;
+    }
+    ::placeholder{
+        font-size: x-small;
+    }
+}
+@media screen and (max-width: 430px){
+    #logoin{
+        width: 25px;
+        height: 25px;
+    }
+    select{
+        width: 25px;
+        height: 25px;
+    }
+    #Carrito{
+        width: 25px;
+        height: 25px;
+    }
+    #nav-icon3 span{
+        width: 20px;
+        height: 20px;
+    }
+
+}
+#nav-icon3 {
+    width: 35px;
+    position: relative;
+    margin: 25px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #nav-icon3 span {
+    display: flex;
+    margin: 5px;
+    height: 2px;
+    
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+#nav-icon3 span:nth-child(1) {
+    top: 0px;
+  }
+  
+  #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+    top: 18px;
+  }
+  
+  #nav-icon3 span:nth-child(4) {
+    top: 36px;
+  }
+  
+  #nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  #nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  #nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
