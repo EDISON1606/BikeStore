@@ -16,8 +16,11 @@ export default function Nabvar() {
         navigate("/Inicio");
     const [clicked, setClicked] = useState(False)
     }
+    const [isOpen, setIsOpen] = useState(false);
 
-    
+    const handleToggleMenu = () => {
+      setIsOpen(prevState => !prevState);
+    }
 
     return (
         <nav className="navbar">
@@ -40,11 +43,18 @@ export default function Nabvar() {
                       <div className="car">
                     <abbr title="Carrito2"><a href="/"><img src={Carrito} id="Carrito"  /></a></abbr>
                     </div>
-    <div id="nav-icon3">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
+                    <div className="menu-toggle" onclick="toggleMenu()">
+    <div className="bar"></div>
+    <div className="bar"></div>
+    <div className="bar"></div>
+  </div>
+
+  <div className="menu3">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Productos</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
 </div>
 </div>
             <div className="menu">
