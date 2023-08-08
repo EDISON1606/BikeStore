@@ -8,8 +8,9 @@ import flecha2 from '../img/flecha-izquierda.png'
  export default function Cards (){
     return(
         <div className='Principal'>
+               <button className='filter-btn'>Filtro</button>
         <div className="menu">
-        <ul className="list">
+        <ul className='list'>
             <li>
                 <h6>Categorias</h6>
             </li>
@@ -92,11 +93,11 @@ import flecha2 from '../img/flecha-izquierda.png'
             <h3>Pagina:</h3>
         <button className="btn-inicio"><img src={flecha2} /></button>
         <div className='btn-selector'>
-        <input type="text" value="1" id="numeropagina" disabled="true"></input>
+        <input type="text" value="1" className="numeropagina" disabled="true"></input>
         </div>
-        <input type="text" value="2" id="numeropagina" disabled="true"></input>
-        <input type="text" value="3" id="numeropagina" disabled="true"></input>
-        <input type="text" value="64" id="numeropagina" disabled="true"></input>
+        <input type="text" value="2" className="numeropagina" disabled="true"></input>
+        <input type="text" value="3" className="numeropagina" disabled="true"></input>
+        <input type="text" value="64" className="numeropagina" disabled="true"></input>
         <button className="btn-final"><img src={flecha1} /></button>
     </div>
             </div>
@@ -109,66 +110,22 @@ import flecha2 from '../img/flecha-izquierda.png'
      <h3>$ 2.299.000</h3>
      <button className='btn'>Agregar Carrito</button>
  </div>
- 
- <div className='cards-products'>
-     <img src={Bici1} className='bici'/>
-     <h2>Bicicleta Urbana FX 2 WSD DISC 2021</h2>
-     <p>Próximamente</p>
-     <h3>$ 1.890.000</h3>
-     <button className='btn'>Agregar Carrito</button>
  </div>
-
- <div className='cards-products'>
-     <img src={Bici2} className='bici'/>
-     <h2>BICICLETA DE MONTAÑA FUEL EX 5</h2>
-     <p>Próximamente</p>
-     <h3>$ 8.490.000</h3>
-     <button className='btn'>Agregar Carrito</button>
- </div>
- <div className='cards-products'>
+ <div className='products'>
+    <div className='cards-products'>
      <img src={Bici} className='bici'/>
      <h2>Bicicleta de montaña marlin 5  2022</h2>
      <p>Próximamente</p>
      <h3>$ 2.299.000</h3>
      <button className='btn'>Agregar Carrito</button>
  </div>
- 
- <div className='cards-products'>
-     <img src={Bici1} className='bici'/>
-     <h2>Bicicleta Urbana FX 2 WSD DISC 2021</h2>
-     <p>Próximamente</p>
-     <h3>$ 1.890.000</h3>
-     <button className='btn'>Agregar Carrito</button>
  </div>
-
- <div className='cards-products'>
-     <img src={Bici2} className='bici'/>
-     <h2>BICICLETA DE MONTAÑA FUEL EX 5</h2>
-     <p>Próximamente</p>
-     <h3>$ 8.490.000</h3>
-     <button className='btn'>Agregar Carrito</button>
- </div>
- <div className='cards-products'>
+ <div className='products'>
+    <div className='cards-products'>
      <img src={Bici} className='bici'/>
      <h2>Bicicleta de montaña marlin 5  2022</h2>
      <p>Próximamente</p>
      <h3>$ 2.299.000</h3>
-     <button className='btn'>Agregar Carrito</button>
- </div>
- 
- <div className='cards-products'>
-     <img src={Bici1} className='bici'/>
-     <h2>Bicicleta Urbana FX 2 WSD DISC 2021</h2>
-     <p>Próximamente</p>
-     <h3>$ 1.890.000</h3>
-     <button className='btn'>Agregar Carrito</button>
- </div>
-
- <div className='cards-products'>
-     <img src={Bici2} className='bici'/>
-     <h2>BICICLETA DE MONTAÑA FUEL EX 5</h2>
-     <p>Próximamente</p>
-     <h3>$ 8.490.000</h3>
      <button className='btn'>Agregar Carrito</button>
  </div>
  </div>
