@@ -226,8 +226,7 @@ ul {
     list-style: none;
     display: flex;
     gap: 25px;
-    align-items: center;
-    margin-top:16px;
+    margin-top:25px;
     margin-right: 25px;
 }
 .logob{
@@ -273,7 +272,7 @@ ul {
     }
   
     .icon3{
-        gap: 13px;
+        gap: 18px;
         
     }
     #Buscar{
@@ -286,6 +285,7 @@ ul {
     ::placeholder{
         font-size:xx-small;
     }
+    
 }
 @media screen and (max-width: 465px){
     .Contener-busqueda{
@@ -317,9 +317,9 @@ ul {
         width: 25px;
         height: 25px;
     }
-    #nav-icon3 span{
-        width: 20px;
-        height: 20px;
+    .hamburger{
+        width: 26px;
+        height: 28px;
     }
 
 }
@@ -395,62 +395,81 @@ ul {
     left: 50%;
   }
   */
-  .menu-toggle {
+
+
+
+
+
+  
+  .App-header {
+    color: white;
     display: flex;
-    width: 30px;
-    height: 20px;
-    position: relative;
-    cursor: pointer;
-    
+    justify-content: space-between;
+    align-items: center;
   }
   
-  .bar {
-    width: 80%;
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 20px;
     height: 2px;
     background-color: white;
-    position: absolute;
+    margin: 3px 0;
     transition: transform 0.3s ease;
   }
   
-  .bar:nth-child(1) {
-    top: 0;
+  .hamburger.open .line.line1 {
+    transform: rotate(45deg) translate(5px, 5px);
   }
   
-  .bar:nth-child(2) {
-    top: 50%;
-    transform: translateY(-50%);
+  .hamburger.open .line.line2 {
+    opacity: 0;
   }
   
-  .bar:nth-child(3) {
-    bottom: 0;
+  .hamburger.open .line.line3 {
+    transform: rotate(-45deg) translate(6px, -6px);
   }
   
-  .menu3 {
+  .menu2 {
     display: none;
-  }
-  
-  .menu3.active {
-    display: block;
     position: absolute;
-    top: 40px;
-    right: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    padding: 10px;
+    top: 65px;
+    right:-1px;
+    width: 150px; 
+    background-color: #282c34;
+    border: 1px solid white;
+    border-top: none;
+    transform-origin: top right;
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+    border-radius: 1px;
   }
   
-  .menu3 ul {
+  .menu2.open {
+    display: block;
+    transform: scaleY(1);
+    transition: 0.10s ease;
+  }
+  
+  .menu2 ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
   
-  .menu3 li {
+  .menu2 li {
     margin-bottom: 10px;
   }
   
-  .menu3 a {
+  .menu2 a {
+    margin-top: 10px;
+    display: flex;
     text-decoration: none;
-    color: #333;
-    font-size: 18px;
+    color: rgb(255, 254, 254);
+    justify-content: center;
   }
+  

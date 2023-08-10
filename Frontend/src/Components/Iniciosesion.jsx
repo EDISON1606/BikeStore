@@ -2,7 +2,7 @@ import React from 'react'
 
 const Iniciosesion = () => {
   return (
-    
+    <div className='fondo-ini'>
       <div className="formulario">
       <h1>Bienvenido a Bike Store!</h1>
       <form method="post">
@@ -20,6 +20,7 @@ const Iniciosesion = () => {
         ¿Aun no tienes cuenta? <a href="#">Registrate</a>
         </div>
       </form>
+    </div>
     </div>
   )
 }

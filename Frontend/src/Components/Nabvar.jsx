@@ -15,12 +15,13 @@ export default function Nabvar() {
 
         navigate("/Inicio");
     const [clicked, setClicked] = useState(False)
-    }
-    const [isOpen, setIsOpen] = useState(false);
+    };
+    
+    const [menuOpen, setMenuOpen] = useState(false);
 
-    const handleToggleMenu = () => {
-      setIsOpen(prevState => !prevState);
-    }
+    const toggleMenu = () => {
+      setMenuOpen(!menuOpen);
+    };
 
     return (
         <nav className="navbar">
@@ -43,19 +44,22 @@ export default function Nabvar() {
                       <div className="car">
                     <abbr title="Carrito2"><a href="/"><img src={Carrito} id="Carrito"  /></a></abbr>
                     </div>
-                    <div className="menu-toggle" onclick="toggleMenu()">
-    <div className="bar"></div>
-    <div className="bar"></div>
-    <div className="bar"></div>
-  </div>
-
-  <div className="menu3">
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Productos</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-</div>
+                   
+      <header className="App-header">
+        <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+          <div className={`line line1`} />
+          <div className={`line line2`} />
+          <div className={`line line3`} />
+        </div>
+        <nav className={`menu2 ${menuOpen ? 'open' : ''}`}>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Favoritos</a></li>
+            <li><a href="#">Atencion al cliente</a></li>
+          </ul>
+        </nav>
+      </header>
+      
 </div>
             <div className="menu">
                 <ul className="list">
