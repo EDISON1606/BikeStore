@@ -1,5 +1,6 @@
 body{
     background-color: #F1EDED;
+
 }
 .Principal{
     display: flex;
@@ -45,9 +46,10 @@ h6{
     background-color: #FFFF;
     border-radius: 25px;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 5px;
     padding: 10px;
     margin-top: 35px;
+    margin-right: 5px;
     
 }
 h2{
@@ -94,12 +96,13 @@ button{
 }
 .products{
     display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
     margin-top: 150px;
-    max-width: 1024px;
-
+    max-width:100%;
+    max-height: 100%;
 }
+
 h5{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
@@ -209,125 +212,26 @@ text-align: center;
 justify-content: center;
 border: transparent;
 display: none;
+font-size:18px;
+    color: black;
 }
 button .filter-btn{
     font-size:25px;
     color: black;
 }
 
-@media  screen and (max-width:1620px) {
-    .Principal{
-        margin:10%;
+
+
+@media screen and (max-width: 1000px){
+    h2{
+        font-size: 15px;
+        margin: 0rem;
     }
-    .filter-btn{
-        display: none;
+    h3{
+        font-size: 15px;
+        margin: 0rem;
     }
     
-}
-@media screen and (max-width:1480px) {
-    h2{
-        font-size: 13px;
-    }
-    h3{
-        font-size: 14px;
-    }
-    h4{
-        font-size: 17px; 
-    }
-    h5{
-        font-size: 14px;
-    }
-    h6{
-        font-size: 24px;
-    }
-    .list{
-        margin-right: 79px;
-        margin-left: 54px;
-    }
-    .categorias{
-        font-size: 15px;
-    }
-}
-@media screen and (max-width: 1325px){
-    h2{
-        font-size: 12px;
-    }
-    h3{
-        font-size: 13px;
-    }
-    h4{
-        font-size: 16px; 
-    }
-    h5{
-        font-size: 13px;
-    }
-    h6{
-        font-size: 23px;
-    }
-    .list{
-        margin-right: 77px;
-        margin-left: 53px;
-    }
-    .categorias{
-        font-size: 14px;
-    }
-}
-@media screen and (max-width: 1100px){
-    h2{
-        font-size: 11px;
-    }
-    h3{
-        font-size: 12px;
-    }
-    h4{
-        font-size: 15px; 
-    }
-    h5{
-        font-size: 13px;
-    }
-    h6{
-        font-size: 23px;
-    }
-    .list{
-        margin-right: 75px;
-        margin-left: 52px;
-    }
-    .categorias{
-        font-size: 13px;
-    }
-
-}
-@media screen and (max-width: 980px){
-    h2{
-        font-size: 10px;
-    }
-    h3{
-        font-size: 11px;
-    }
-    h4{
-        font-size: 14px; 
-    }
-    h5{
-        font-size: 12px;
-    }
-    h6{
-        font-size: 22px;
-    }
-    .list{
-        margin-right: 74px;
-        margin-left: 51px;
-    }
-    .categorias{
-        font-size: 12px;
-    }
-}
-@media screen and (max-width: 900px){
-    h2{
-        font-size: 9px;
-    }
-    h3{
-        font-size: 10px;
-    }
     h4{
         font-size: 12px; 
     }
@@ -344,114 +248,11 @@ button .filter-btn{
     .categorias{
         font-size: 11px;
     }
-}
-@media screen and (max-width: 800px){
-    .filter-btn{ 
-        display: flex;
-    }
-    .menu{
-        display: none;
-    }
-    .products{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .pagination{
-        height: 9rem;
-        position: relative;
-        right: 31rem;
-        width: 5rem;
-        margin-left:350px;
-        }
-}
-@media screen and (max-width: 690px){
-    .filter-btn{ 
-        display: flex;
-    }
-    .menu{
-        display: none;
-    }
-    .products{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media screen and (max-width: 650px){
-}
-@media screen and (max-width: 500px){
-}
-@media screen and (max-width: 450px){
-    .filter-btn{ 
-    display: flex;
-    height: 9rem;
-    position: relative;
-    right: 31rem;
-    width: 5rem;
-    }
-    .menu{
-        display: none;
-        
-    }
-    .products{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    #root{
-        display: flex;
-        flex-flow: column;
-    }
-    .pagination{
-        top: 1rem;
-        position: relative;
-        right: 34rem;
-        width: 5rem;
-    }
-    .btn-inicio{
-        width: 15px;
-        height: 15px;
-    }
-    .numeropagina{
-        border-radius: 100%;
-        width: 19px;
-        height: 19px;
-    }
-    .pagination img{
-        display: flex;
-        align-items: center;
-        width: 16px;
-        height: 16px;
-        
-    }
-    .pagination button, input{
-        margin: 7px;
-    }
-    .recomendado{
-        font-size: 12px;
-    }
-  .cards-products{
-    width: 155px;
-    height: auto;
-  }
-  .bici{
-    width: 150px;
-    height: 150px;
-}
-.btn{
-    height: 20px;
-    width: 153px;
-    justify-content: center;
-    border-radius: 25px;
-}
-button {
-    font-size: 0.7px;
-}
-p{
-    font-size: 9px;
-}
-}
-@media screen and (max-width: 370px){
     .filter-btn{ 
         display: flex;
         height: 9rem;
         position: relative;
-        right: 31rem;
+        right: 8rem;
         width: 5rem;
         }
         .menu{
@@ -460,17 +261,126 @@ p{
         }
         .products{
             grid-template-columns: repeat(2, 1fr);
+            position: relative;
+            right: 17rem;
         }
-        #root{
-            display: flex;
-            flex-flow: column;
+        .opcion{
+            top: 1rem;
+            position: relative;
+            right: -15rem;
+            width: 5rem;
         }
         .pagination{
+            top: 1rem;
+            position: relative;
+            right: 54rem;
+            width: 25rem;
+            top: 2rem
+        }
+        .btn-inicio{
+            width: 15px;
+            height: 15px;
+        }
+        .numeropagina{
+            border-radius: 100%;
+            width: 19px;
+            height: 19px;
+        }
+        .btn{
+            height: 30px;
+            width: 180px;
+        .btn-inicio{
+
+        }
+        .pagination img{
+            display: flex;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+            
+        }
+        .pagination button, input{
+            margin: 7px;
+        }
+        .recomendado{
+            font-size: 12px;
+        }
+      .cards-products{
+        width: 215px;
+        height: 362px;
+        }
+    
+        .bici{
+            width: 180px;
+        }
+      .btn{
+        height: 20px;
+        width: 110px;
+        justify-content: center;
+        border-radius: 25px;
+        }
+    button.btn {
+        font-size: 10px;
+    }
+    p{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    h2{
+        font-size: 9px;
+        margin: 0rem;
+    }
+    h3{
+        font-size: 10px;
+        margin: 0rem;
+    }
+    
+    h4{
+        font-size: 12px; 
+    }
+    h5{
+        font-size: 10px;
+    }
+    h6{
+        font-size: 20px;
+    }
+    .list{
+        margin-right: 70px;
+        margin-left: 50px;
+    }
+    .categorias{
+        font-size: 11px;
+    }
+    .filter-btn{ 
+        display: flex;
         height: 9rem;
         position: relative;
-        right: 31rem;
+        right: 12rem;
         width: 5rem;
-        margin-left:350px;
+        }
+        .menu{
+            display: none;
+            
+        }
+        .products{
+            grid-template-columns: repeat(2, 1fr);
+            position: relative;
+            right: 22rem;
+        }
+        .opcion{
+            top: 1rem;
+            position: relative;
+            right: 9rem;
+            width: 5rem;
+        }
+        .pagination{
+            top: 1rem;
+            position: relative;
+            right: 34rem;
+            width: 25rem;
+            top: 2rem
         }
         .btn-inicio{
             width: 15px;
@@ -495,21 +405,222 @@ p{
             font-size: 12px;
         }
       .cards-products{
-        width: 155px;
-        height: 262px;
-      }
+        width: 125px;
+        height: auto;
+        }
       .bici{
-        width: 150px;
-        height: 150px;
-    }
-    .btn{
+        width: 115px;
+        height: auto;
+   
+        }
+      .btn{
         height: 20px;
         width: 110px;
         justify-content: center;
         border-radius: 25px;
+        }
+    button.btn {
+        font-size: 10px;
     }
-    button {
-        font-size: 0.7px;
+    p{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    h2{
+        font-size: 9px;
+        margin: 0rem;
+    }
+    h3{
+        font-size: 10px;
+        margin: 0rem;
+    }
+    
+    h4{
+        font-size: 12px; 
+    }
+    h5{
+        font-size: 10px;
+    }
+    h6{
+        font-size: 20px;
+    }
+    .list{
+        margin-right: 70px;
+        margin-left: 50px;
+    }
+    .categorias{
+        font-size: 11px;
+    }
+    .filter-btn{ 
+        display: flex;
+        height: 9rem;
+        position: relative;
+        right: 12rem;
+        width: 5rem;
+        }
+        .menu{
+            display: none;
+            
+        }
+        .products{
+            grid-template-columns: repeat(2, 1fr);
+            position: relative;
+            right: 22rem;
+        }
+        .opcion{
+            top: 1rem;
+            position: relative;
+            right: 9rem;
+            width: 5rem;
+        }
+        .pagination{
+            top: 1rem;
+            position: relative;
+            right: 34rem;
+            width: 25rem;
+            top: 2rem
+        }
+        .btn-inicio{
+            width: 15px;
+            height: 15px;
+        }
+        .numeropagina{
+            border-radius: 100%;
+            width: 19px;
+            height: 19px;
+        }
+        .pagination img{
+            display: flex;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+            
+        }
+        .pagination button, input{
+            margin: 7px;
+        }
+        .recomendado{
+            font-size: 12px;
+        }
+      .cards-products{
+        width: 125px;
+        height: auto;
+        }
+      .bici{
+        width: 115px;
+        height: auto;
+   
+        }
+      .btn{
+        height: 20px;
+        width: 110px;
+        justify-content: center;
+        border-radius: 25px;
+        }
+    button.btn {
+        font-size: 10px;
+    }
+    p{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    h2{
+        font-size: 9px;
+        margin: 0rem;
+    }
+    h3{
+        font-size: 10px;
+        margin: 0rem;
+    }
+    
+    h4{
+        font-size: 12px; 
+    }
+    h5{
+        font-size: 10px;
+    }
+    h6{
+        font-size: 20px;
+    }
+    .list{
+        margin-right: 70px;
+        margin-left: 50px;
+    }
+    .categorias{
+        font-size: 11px;
+    }
+    .filter-btn{ 
+        display: flex;
+        height: 9rem;
+        position: relative;
+        right: 12rem;
+        width: 5rem;
+        }
+        .menu{
+            display: none;
+            
+        }
+        .products{
+            grid-template-columns: repeat(2, 1fr);
+            position: relative;
+            right: 22rem;
+        }
+        .opcion{
+            top: 1rem;
+            position: relative;
+            right: 9rem;
+            width: 5rem;
+        }
+        .pagination{
+            top: 1rem;
+            position: relative;
+            right: 34rem;
+            width: 25rem;
+            top: 2rem
+        }
+        .btn-inicio{
+            width: 15px;
+            height: 15px;
+        }
+        .numeropagina{
+            border-radius: 100%;
+            width: 19px;
+            height: 19px;
+        }
+        .pagination img{
+            display: flex;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+            
+        }
+        .pagination button, input{
+            margin: 7px;
+        }
+        .recomendado{
+            font-size: 12px;
+        }
+      .cards-products{
+        width: 125px;
+        height: auto;
+        }
+      .bici{
+        width: 115px;
+        height: auto;
+   
+        }
+      .btn{
+        height: 20px;
+        width: 110px;
+        justify-content: center;
+        border-radius: 25px;
+        }
+    button.btn {
+        font-size: 10px;
     }
     p{
         font-size: 9px;
