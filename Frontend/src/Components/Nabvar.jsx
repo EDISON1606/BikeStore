@@ -9,13 +9,16 @@ import { useNavigate } from "react-router-dom";
 
 export default function Nabvar() {
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const redireccionar = ()=>{
+  const redireccionar = (event) => {
+    const opcionSeleccionada = event.target.value;
+    
+    if (opcionSeleccionada === 'opcion1') {
+      navigate('/Inicio');
+    }
+  };
 
-        navigate("/Inicio");
-    const [clicked, setClicked] = useState(False)
-    };
     
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -36,9 +39,9 @@ export default function Nabvar() {
     <div className="ini2">
                     <abbr title="Opciones"><li><a href="#"><img src={Logoin} alt="inicio/registro" id="logoin"/></a></li>
                     <select id="selector" onChange={redireccionar}>
-                        <option></option>
-                        <option>Inicio   </option> 
-                        <option>Registro</option>
+                        <option value="opcion0"></option>
+                        <option value="opcion1">Inicio   </option> 
+                        <option value="opcion2">Registro</option>
                         </select></abbr>
                       </div>
                       <div className="car">
@@ -69,9 +72,9 @@ export default function Nabvar() {
                     <div className="ini">
                     <abbr title="Opciones"><li><a href="#"><img src={Logoin} alt="inicio/registro" id="logoin"/></a></li>
                     <select id="selector" onChange={redireccionar}>
-                        <option></option>
-                        <option>Inicio   </option> 
-                        <option>Registro</option>
+                        <option value="opcion0"></option>
+                        <option value="opcion1">Inicio</option> 
+                        <option value="opcion2">Registro</option>
                         </select></abbr>
                       </div>
                     <li className="meg">
