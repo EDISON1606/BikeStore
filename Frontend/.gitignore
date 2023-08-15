@@ -1,32 +1,24 @@
-# Directorios
-node_modules/
-dist/
-build/
-
-# Archivos
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Dependencias específicas de desarrollo de React con Vite
-/.cache/
-/.eslintcache
-/tsconfig.tsbuildinfo
-/dist/    # Para proyectos de Vite
-
-# Otros archivos y carpetas generados
-.DS_Store
+# Logs
+logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-/.pnp
-.pnp.js
-*.pnp.js
-/.yarn
+pnpm-debug.log*
+lerna-debug.log*
 
-# Dependencias de package-lock.json / yarn.lock
-# Eliminar las siguientes líneas si no estás usando npm o Yarn
-**/package-lock.json
-**/yarn.lock
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
