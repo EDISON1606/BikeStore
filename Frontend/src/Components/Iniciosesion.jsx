@@ -7,7 +7,7 @@ const Iniciosesion = () => {
       <h1>Bienvenido a Bike Store!</h1>
       <form method="post">
         <div className="username">
-          <input type="text" placeholder=' ' required/> 
+          <input type="email" placeholder=' ' required/> 
             <label>Correo electronico</label>
         </div>
         <div className="username">

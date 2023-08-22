@@ -16,7 +16,10 @@ export default function Nabvar() {
     
     if (opcionSeleccionada === 'opcion1') {
       navigate('/Inicio');
-    }
+    } 
+    else if (opcionSeleccionada === 'opcion2') {
+      navigate('/Registro');
+    } 
   };
 
     
