@@ -2,7 +2,7 @@ import React from 'react'
 
 const Iniciosesion = () => {
   return (
-    <div className='fondo-ini'>
+    <div className='fondo-ini2'>
       <div className="formulario">
       <h1>Bienvenido a Bike Store!</h1>
       <form method="post">
@@ -17,7 +17,7 @@ const Iniciosesion = () => {
         <div className='recordar'><a href="#">Restablecer contraseña</a></div>
         <input type="submit" value="Ingresar"/>
         <div className='Registrarse'>
-        ¿Aun no tienes cuenta? <a href="#">Registrate</a>
+        ¿Aun no tienes cuenta? <a href="Regis">Registrate</a>
         </div>
       </form>
     </div>

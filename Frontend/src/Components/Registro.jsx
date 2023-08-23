@@ -28,7 +28,7 @@ const Registro = () => {
         </div>
         <input  className="Registro" type="submit" value="Registrate"/>
         <div className='inicia'>
-        ¿Ya tienes cuenta? <a href="#">Inicia Sesion</a>
+        ¿Ya tienes cuenta? <a href="./InicioSe">Inicia Sesion</a>
         </div>
       </form>
     </div>

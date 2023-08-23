@@ -5,8 +5,8 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 width: 400px;
-height: 520px;
 border-radius: 10px;
+max-height: 85%;
 max-width: 90%;
 margin-top: 25px;
 }
@@ -15,7 +15,7 @@ margin-top: 25px;
     padding: 0 0 20px 0;
     border-bottom: 1px solid silver;
     margin: 30px;
-    font-size:x-large;
+    font-size:28px;
 }
 .formulario2 form{
     padding: 0 40px;
@@ -27,7 +27,7 @@ form .username2{
     margin: 18px 0;
 }
 .fondo-ini{
-    background-image: url(../Img/atleta-ciclistas-siluetas-sobre-fondo-blanco-aislado_250469-12377.jpg);
+    background-image: url(../Img/munbaik-cycling-clothing-iZJrOqEaPNI-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

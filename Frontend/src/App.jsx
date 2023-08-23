@@ -17,6 +17,8 @@ function App() {
       <Routes>
         <Route path='/Inicio' element={<Iniciosesion/>}/>
         <Route path='/Registro' element={<Registro/>}/>
+        <Route path='/InicioSe'  element={<Iniciosesion/>}/>
+        <Route path='/Regis' element={<Registro/>}/>
       </Routes>
     </Router>
     </>
