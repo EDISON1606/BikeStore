@@ -231,153 +231,8 @@ button{
     justify-content: center;
     align-content: space-around;
  }
- @media screen and (max-width: 1000px){
-    h2{
-        font-size: 16px;
-        margin: 0rem;
-    }
-    h3{
-        font-size: 17px;
-        margin: 0rem;
-    }
-    
-    h5{
-        font-size: 10px;
-    }
-    h6{
-        font-size: 20px;
-    }
-    option{
-        font-size: 15px;
-    }
+ 
 
-    .categorias{
-        font-size: 11px;
-    }
-    .filter-btn {
-        display: flex;
-        height: 5rem;
-        position: relative;
-        right: 8rem;
-        width: 5rem;
-    }
-        .menu{
-            display: none;
-            
-        }
-        .products{
-            grid-template-columns: repeat(3, 1fr);
-            position: relative;
-            right: 17rem;
-        
-        }
-        .opcion{
-            top: 1rem;
-            position: relative;
-            right: -15rem;
-            width: 5rem;
-        }
-        .pagination{
-        
-            position: relative;
-            right: 50rem;
-            width: 22rem;
-            top: 4rem
-        }
-        .btn-inicio{
-            width: 15px;
-            height: 15px;
-        }
-        .numeropagina{
-            border-radius: 100%;
-            width: 45px;
-            height: 45px;
-        }
-        .btn{
-            height: 35px;
-            width: 150px;
-            justify-content: center;
-            border-radius: 25px;
-        }
-       
-        .pagination img{
-            display: flex;
-            align-items: center;
-            width: 16px;
-            height: 16px;
-            
-        }
-        .pagination button, input{
-            margin: 7px;
-        }
-        .recomendado{
-            font-size: 12px;
-        }
-      .cards-products{
-        width: 200px;
-        height: 343px;
-        }
-    
-        .bici{
-            width: 170px;
-        }
-      
-    button.btn {
-        font-size: 15px;
-    }
-    p{
-        font-size: 14px;
-    }
-}
-@media screen and (max-width: 1000px){
-    .products {
-        grid-template-columns: repeat(3, 1fr);
-        position: relative;
-        right: 14.5rem;
-    }
-    .pagination {
-        position: relative;
-        right: 48rem;
-        width: 22rem;
-        top: 4rem;
-    }
-    .filter-btn {
-        display: flex;
-        height: 5rem;
-        position: relative;
-        right: 6rem;
-        width: 5rem;
-        font-size: 24px;
-        font-weight: bolder;
-    }
-    h3{
-        font-size: 18px;
-
-    }
-    .filter-btn {
-        display: flex;
-        height: 5rem;
-        position: relative;
-        right: 5rem;
-        font-size: 23px;
-        font-weight: bolder;
-    }
-    .pagination {
-        position: relative;
-        right: 48rem;
-        width: 18rem;
-        top: 4rem;
-    }
-    .pagination button, input {
-        margin: 8px;
-    }
-    .pagination input {
-        font-size: 19px;
-    }
-    .recomendado {
-        font-size: 15px;
-    }
-}
 @media screen and (max-width: 1284px){
 
     .products {
@@ -398,6 +253,12 @@ button{
     
     }
 @media screen and (max-width: 1024px){
+    h6{
+        font-size: 22px;
+    }
+    .categorias{
+        font-size: 14px;
+    }
 
     .products {
         grid-template-columns: repeat(3, 1fr);
@@ -408,12 +269,16 @@ button{
         margin-left: -144px;
     }
     .cards-products {
-        width: 184px;
-        height: 362px;
+        width: 179px;
+        height: 345px;
+    }
+    .btn{
+        height: 30px;
+        width: 167px;
     }
     .pagination{
         width: 273px;
-        margin-left: 122px;
+        margin-left: 92px;
     }
     
     }
@@ -445,7 +310,7 @@ button{
     display: flex;
     height: 5rem;
     position: relative;
-    right: 4rem;
+    right: 6rem;
     font-size: 23px;
     font-weight: bolder;
 }
@@ -453,6 +318,9 @@ button{
     grid-template-columns: repeat(3, 1fr);
     position: relative;
     right: 14.5rem;
+}
+.menu{
+    display: none;
 }
 .cards-products {
     width: 195px;
@@ -491,10 +359,13 @@ button.btn {
     position: relative;
     right: 17.5rem;
 }
+.menu{
+    display: none;
+}
 .pagination {
     position: relative;
     right: 48rem;
-    width: 14rem;
+    width: 16rem;
     top: 4rem;
 }
 .filter-btn {
@@ -522,7 +393,7 @@ button.btn {
     .opcion {
         top: 1rem;
         position: relative;
-        right: -14rem;
+        right: -15rem;
         width: 5rem;
     }
    
@@ -660,7 +531,7 @@ button.btn {
 }
 .pagination {
     position: relative;
-    right: 38rem;
+    right: 36rem;
     top: 4rem;
 }
 .numeropagina {
@@ -678,11 +549,13 @@ button.btn {
         right: 9rem;
         font-size: 15px;
         }
-       
+       .menu{
+        display: none;
+       }
         .products{
             grid-template-columns: repeat(2, 1fr);
             position: relative;
-            right: 15.7rem;
+            right: 16.5rem;
         }
         .opcion{
             top: 1rem;
@@ -692,7 +565,7 @@ button.btn {
         }
         .pagination{
             position: relative;
-            right: 27rem;
+            right: 24rem;
             top: 3rem
         }
         .pagination input {
@@ -721,7 +594,7 @@ button.btn {
        
         .pagination{
             position: relative;
-            right: 27rem;
+            right: 25rem;
             top: 4rem
         }
         
@@ -750,7 +623,7 @@ button.btn {
         display: flex;
         height: 5rem;
         position: relative;
-        right: 11rem;
+        right: 9rem;
         font-size: 16px;
     }
         .menu{
@@ -760,12 +633,12 @@ button.btn {
         .products{
             grid-template-columns: repeat(2, 1fr);
             position: relative;
-            right: 17.1rem;
+            right: 16.1rem;
         }
       
         .pagination {
             position: relative;
-            right: 26rem;
+            right: 23rem;
             top: 4rem;
         }
         .numeropagina {
@@ -867,7 +740,7 @@ button.btn {
         .pagination{
             top: 1rem;
             position: relative;
-            right: 23rem;
+            right: 21rem;
             top: 4rem
         }
         .btn-inicio{
