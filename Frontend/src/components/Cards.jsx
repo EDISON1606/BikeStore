@@ -56,7 +56,7 @@ export default function Cards() {
                             <option className="A" value="" disabled="true"></option>
                             <option className="opcion" value="">Hard Tail</option>
                             <option className="A" value="" disabled="true"></option>
-                            <option className="A" value="">Franos Disco</option>
+                            <option className="A" value="">Frenos Disco</option>
                             <option className="A" value="" disabled="true"></option>
                             <option className="A" value="">1x Transmision</option>
                             <option className="A" value="" disabled="true"></option>
