@@ -24,7 +24,7 @@
     border: none;
     display: none;
 }
-.list{
+.list_uno{
     list-style: none;
     display: flex;
     gap: 20px;
@@ -34,7 +34,7 @@
     margin-left: 55px;
     border-right: 1px solid silver;
 }
-.categorias{
+.categorias_uno{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     color: black; 
@@ -108,7 +108,7 @@ input{
     border: transparent;
    
 }
-.opcion{
+.opcion_dos{
     list-style: none;
     display: flex;
     width: 0px;
@@ -231,7 +231,10 @@ button{
     justify-content: center;
     align-content: space-around;
  }
- 
+ .show{
+    display: block;
+ }
+
 
 @media screen and (max-width: 1284px){
 
@@ -280,7 +283,9 @@ button{
         width: 273px;
         margin-left: 92px;
     }
-    
+    .menu .show{
+    display: block;
+}
     }
 @media screen and (max-width: 1000px){
 
@@ -303,6 +308,9 @@ button{
     font-size: 23px;
     font-weight: bolder;
 }
+.menu .show{
+    display: block;
+}
 
 }
 @media screen and (max-width: 912px){
@@ -322,11 +330,14 @@ button{
 .menu{
     display: none;
 }
+.menu .show{
+    display: block;
+}
 .cards-products {
     width: 195px;
     height: 360px;
 }
-.opcion {
+.opcion_dos {
     top: 1rem;
     position: relative;
     right: -18rem;
@@ -362,6 +373,9 @@ button.btn {
 .menu{
     display: none;
 }
+.menu .show{
+    display: block;
+}
 .pagination {
     position: relative;
     right: 48rem;
@@ -390,7 +404,7 @@ button.btn {
         position: relative;
         right: 16.6rem;
     }
-    .opcion {
+    .opcion_dos{
         top: 1rem;
         position: relative;
         right: -15rem;
@@ -404,6 +418,9 @@ button.btn {
         right: 8rem;
         font-size: 23px;
         font-weight: bolder;
+    }
+    .menu .show{
+        display: block;
     }
     .cards-products {
         width: 187px;
@@ -447,13 +464,15 @@ button.btn {
         right: 11rem;
         width: 7rem;
         }
-        
+        .menu .show{
+            display: block;
+        }
         .products{
             grid-template-columns: repeat(2, 1fr);
             position: relative;
             right: 22rem;
         }
-        .opcion{
+        .opcion_dos{
             top: 1rem;
             position: relative;
             right: 9rem;
@@ -512,7 +531,7 @@ button.btn {
 }
 @media screen and (max-width: 540px){
 
-.opcion {
+.opcion_dos {
     top: 1rem;
     position: relative;
     right: -4rem;
@@ -528,6 +547,9 @@ button.btn {
     height: 5rem;
     position: relative;
     right: 10rem;
+}
+.menu .show{
+    display: block;
 }
 .pagination {
     position: relative;
@@ -552,12 +574,15 @@ button.btn {
        .menu{
         display: none;
        }
+       .menu .show{
+        display: block;
+    }
         .products{
             grid-template-columns: repeat(2, 1fr);
             position: relative;
             right: 16.5rem;
         }
-        .opcion{
+        .opcion_dos{
             top: 1rem;
             position: relative;
             right: 5rem;
@@ -585,6 +610,9 @@ button.btn {
         .menu{
             display: none;
             
+        }
+        .menu .show{
+            display: block;
         }
         .products{
             grid-template-columns: repeat(2, 1fr);
@@ -635,7 +663,9 @@ button.btn {
             position: relative;
             right: 16.1rem;
         }
-      
+        .menu .show{
+            display: block;
+        }
         .pagination {
             position: relative;
             right: 23rem;
@@ -724,14 +754,16 @@ button.btn {
     }
         .menu{
             display: none;
-            
+        }
+        .menu .show{
+            display: block;
         }
         .products {
             grid-template-columns: repeat(2, 1fr);
             position: relative;
             right: 18.3rem;
         }
-        .opcion{
+        .opcion_dos{
             top: 1rem;
             position: relative;
             right: 9rem;
