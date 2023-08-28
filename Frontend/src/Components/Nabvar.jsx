@@ -19,7 +19,7 @@ export default function Nabvar() {
     } 
     else if (opcionSeleccionada === 'opcion2') {
       navigate('/Registro');
-    } 
+    }
   };
 
     
