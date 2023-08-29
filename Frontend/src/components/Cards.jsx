@@ -1,46 +1,72 @@
-import React, {useState} from 'react'
-import Bici from '../img/Bici 33.png'
-import Bici1 from '../img/bici1 31.png'
-import Bici2 from '../img/bici2 31.png'
-import flecha1 from '../img/flecha-correcta.png'
-import flecha2 from '../img/flecha-izquierda.png'
+import React, { useState, useEffect } from 'react';
+import Bici from '../img/Bici 33.png';
+import flecha1 from '../img/flecha-correcta.png';
+import flecha2 from '../img/flecha-izquierda.png';
 
 export default function Cards() {
-    const [showFilters, setShowFilters] = useState(false);
-    
-        const toggleFilters = () => {
-          console.log('Toggle Filters clicked');
-          setShowFilters(!showFilters);
-        };
-        
-        const redireccionamiento = (event) => {
-            const selectedValue = event. target. value;
-            console.log("Categoría seleccionada:", selectedValue);
-        };
-        
-    return (
-        
-        <div className='Principal'>
-            <button className='filter-btn'onClick={toggleFilters}>Filtro</button>
-            <div className={`menu ${showFilters ? 'show' : ''}`}>
-                <ul className='list_uno'>
+  const [showFilters, setShowFilters] = useState(false);
+
+  const toggleFilters = () => {
+    setShowFilters(!showFilters);
+  };
+
+  const redireccionamiento = (event) => {
+    const selectedValue = event.target.value;
+    console.log('Categoría seleccionada:', selectedValue);
+  };
+
+  useEffect(() => {
+    const inputelement = document.querySelector('.numeropagina');
+    let pagina = parseInt(inputelement.value);
+
+    const btnAnterior = document.querySelector('.btn-inicio');
+    const btnSiguiente = document.querySelector('.btn-final');
+
+    btnSiguiente.addEventListener('click', () => {
+      if (pagina < 50) {
+        pagina += 1;
+        // fetchData(pagina); // Debes proporcionar la función fetchData
+        updatePageNumber(pagina);
+        window.scrollTo(0, 0);
+      }
+    });
+
+    btnAnterior.addEventListener('click', () => {
+      if (pagina > 1) {
+        pagina -= 1;
+        // fetchData(); // Debes proporcionar la función fetchData
+        inputelement.value = pagina;
+        window.scrollTo(0, 0);
+      } else {
+        alert('No hay más páginas atrás');
+      }
+    });
+  }, []); // Agregué un arreglo vacío para ejecutar el efecto una sola vez
+
+  function updatePageNumber(page) {
+    const inputelement = document.querySelector('.numeropagina');
+    inputelement.value = page;
+  }
+
+  return (
+    <div className='Principal'>
+      <button className='filter-btn' onClick={toggleFilters}>
+        Filtro
+      </button>
+      <div className={`menu ${showFilters ? 'show' : ''}`}>
+      <ul className='list_uno'>
                     <li>
                         <h6>Categorias</h6>
                     </li>
                     <li>
-                        <select className="categorias_uno" onChange={redireccionamiento}>
-                            <option className="opcion_uno" value="" >Bicicletas</option>
-                            <option className="A" value="" disabled="true"></option>
-                            <option className="opcion_uno" value="">Montaña</option>
-                            <option className="A" value="" disabled="true"></option>
-                            <option className="opcion_uno" value="">Ruta</option>
-                            <option className="A" value="" disabled="true"></option>
-                            <option className="opcion_uno" value="">BMX</option>
-                            <option className="A" value="" disabled="true"></option>
-                            <option className="opcion_uno" value="">Niños</option>
-                            <option className="A" value="" disabled="true"></option>
-                            <option className="A" value="">Gravel</option>
-                        </select>
+                    <select className="categorias_uno" onChange={redireccionamiento}>
+    <option className="opcion_uno" value="bicicletas">Bicicletas</option>
+    <option className="A" value="montana">Montaña</option>
+    <option className="opcion_uno" value="ruta">Ruta</option>
+    <option className="A" value="bmx">BMX</option>
+    <option className="opcion_uno" value="ninos">Niños</option>
+    <option className="A" value="gravel">Gravel</option>
+</select>
                     </li>
                     <li>
                         <select className="categorias_uno" onChange={redireccionamiento}>
@@ -84,9 +110,9 @@ export default function Cards() {
                         <h5>Max</h5>
                     </div>
                 </ul>
-            </div>
-            <div className='opcion_dos'>
-                <li>
+      </div>
+      <div className='opcion_dos'>
+      <li>
                     <h4>Ordenado por</h4>
                     <select className="recomendado" onChange={redireccionamiento}>
                         <option className="opcion_uno" value="" >Recomendados</option>
@@ -102,59 +128,54 @@ export default function Cards() {
                         <option className="A" value="">Los mejore evaluados</option>
                     </select>
                 </li>
-                <div class="pagination">
-                    <h3>Pagina:</h3>
+      </div>
+      <div className='pagination'>
+      <h3>Pagina:</h3>
                     <button className="btn-inicio"><img src={flecha2} /></button>
                     <div className='btn-selector'>
                         <input type="text" value="1" className="numeropagina" disabled="true"></input>
                     </div>
-                    <input type="text" value="2" className="numeropagina" disabled="true"></input>
-                    <input type="text" value="3" className="numeropagina" disabled="true"></input>
-                    <input type="text" value="64" className="numeropagina" disabled="true"></input>
                     <button className="btn-final"><img src={flecha1} /></button>
-                </div>
-            </div>
-
-
-                <div className='products'>
-                    <div className='cards-products'>
+      </div>
+      <div className='products'>
+                       <div className='cards-products'>
+                <a href='detail'>
                         <img src={Bici} className='bici' />
                         <h2>Bicicleta de montaña marlin 5  2022</h2>
                         <p>Próximamente</p>
                         <h3>$ 2.299.000</h3>
+                        </a>
                         <button className='btn'>Agregar Carrito</button>
                     </div>
                     <div className='cards-products'>
-                        <img src={Bici} className='bici' /><a href='detail'></a>
-                        <h2>Bicicleta de montaña marlin 5  2022</h2>
-                        <p>Próximamente</p>
-                        <h3>$ 2.299.000</h3>
-                        <button className='btn'>Agregar Carrito</button>
-                    </div>
-                    <div className='cards-products'>
+                <a href='detail'>
                         <img src={Bici} className='bici' />
                         <h2>Bicicleta de montaña marlin 5  2022</h2>
                         <p>Próximamente</p>
                         <h3>$ 2.299.000</h3>
+                        </a>
                         <button className='btn'>Agregar Carrito</button>
                     </div>
+                   
                     <div className='cards-products'>
+                <a href='detail'>
                         <img src={Bici} className='bici' />
                         <h2>Bicicleta de montaña marlin 5  2022</h2>
                         <p>Próximamente</p>
                         <h3>$ 2.299.000</h3>
+                        </a>
                         <button className='btn'>Agregar Carrito</button>
                     </div>
                     <div className='cards-products'>
+                <a href='detail'>
                         <img src={Bici} className='bici' />
                         <h2>Bicicleta de montaña marlin 5  2022</h2>
                         <p>Próximamente</p>
                         <h3>$ 2.299.000</h3>
+                        </a>
                         <button className='btn'>Agregar Carrito</button>
                     </div>
-                </div>
-            </div>
-
-
-);
-};
+      </div>
+    </div>
+  );
+}
