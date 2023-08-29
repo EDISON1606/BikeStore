@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Nabvar() {
 
+  
   const navigate = useNavigate();
 
   const redireccionar = (event) => {

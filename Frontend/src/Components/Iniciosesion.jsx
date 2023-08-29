@@ -17,7 +17,7 @@ const Iniciosesion = () => {
         <div className='recordar'><a href="#">Restablecer contraseña</a></div>
         <input type="submit" value="Ingresar"/>
         <div className='Registrarse'>
-        ¿Aun no tienes cuenta? <a href="Regis">Registrate</a>
+        ¿Aun no tienes cuenta? <a href="Registro">Registrate</a>
         </div>
       </form>
     </div>
