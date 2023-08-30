@@ -10,6 +10,12 @@ max-height: 85%;
 max-width: 90%;
 margin-top: 25px;
 }
+.error{
+    color: red;
+    font-size: small;
+    display:flex ;
+    margin-top: -15px;
+}
 .formulario2 h1{
     text-align: center;
     padding: 0 0 20px 0;
@@ -58,7 +64,6 @@ form .username2{
     transition: .5s;
 }
 .username2 span::before{
-    content: '';
     position: absolute;
     top: 48px;
     left: 0;

@@ -4,7 +4,6 @@ import Logoin from "../Img/ingresar.png";
 import Logomeg from "../Img/megusta.png";
 import Carrito from "../Img/Carrito.png";
 import Lupa from "../Img/lupa.png";
-import Menu from "../Img/menu.png";
 import { useNavigate } from "react-router-dom";
 
 export default function Nabvar() {
