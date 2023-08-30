@@ -1,18 +1,18 @@
 import React from 'react'
-import Bici from '../img/Bici 33.png'
+import Bici1 from '../img/bici1 31.png'
 
 export default function Cards_detail (){
 
     return(
         <div className='cards_detail'>
-         <img src={Bici} className='bici' />
+         <img src={Bici1} className='bici2'/>
          <h1>Bicicleta de montaña marlin 5  2022</h1>
-         <h7>Vendido por BikeStore</h7>
+         <h2>Vendido por BikeStore</h2>
          <h3>$ 2.299.000</h3>  
             <div className='menu_detail'>
             <ul className='list_dos'>
                     <li>
-                        <h6>Talla</h6>
+                        <h6>Talla:</h6>
                         <select className="talla" >
                             <option className="opcion_uno" value="" >XS</option>
                             <option className="A" value="" disabled="true"></option>
@@ -27,13 +27,13 @@ export default function Cards_detail (){
                         </select>
                     </li>
                     <li>
-                        <h6>Color</h6>
-                        <select className="categorias_uno">
-                        </select>
+                        <h6>Color:</h6>
+                        
                     </li>
                     </ul>
                     <button className=''></button>
-                </div>                                    
+                </div>      
+                <button className='btn2'>Agregar Carrito</button>                              
         </div>
     );
 };

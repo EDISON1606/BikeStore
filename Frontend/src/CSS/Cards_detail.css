@@ -1,0 +1,101 @@
+.cards_detail {
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+    width: 1245px;
+    height: 500px;
+    left: 18rem;
+    top: 5rem;
+}
+.cards_detail h1 {
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    position: relative;
+    left: 28rem;
+    top: -15rem;
+    width: 660px;
+}
+.menu_detail h6{
+    font-size: 14px;
+    background-color: white;
+    position: relative;
+    right: 1rem;
+    top: 1rem;
+    width: 64px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu_detail{
+    background-color: white;
+    position: relative;
+    left: 26rem;
+    top: -13rem;
+    width: 302px;
+}
+.bici2 {
+    width: 300px;
+    position: relative;
+    left: 7rem;
+    border-right: 1px solid silver;
+    top: 3rem;
+}
+
+.list_dos{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 60px;
+    margin-left: 55px;
+    background-color: transparent;
+}
+.talla{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: black;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    left: 2rem;
+   
+}
+.cards_detail h3{
+    font-size: 25px;
+    background-color: white;
+    position: relative;
+    left: 55rem;
+    top: -11rem;
+    width: 140px;
+    font-weight: lighter;
+
+}
+.cards_detail h2 {
+    font-size: 12px;
+    background-color: white;
+    position: relative;
+    left: 27rem;
+    top: -14rem;
+    width: 164px;
+    border-bottom: 1px solid silver;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: dimgray;
+}
+.menu_detail li{
+    background-color: white;
+}
+.btn2{
+    height: 35px;
+    width: 169px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
+    background: #0097A7;
+    border: none;
+    position: relative;
+    left: 54rem;
+    top: -4rem;
+}
