@@ -66,7 +66,7 @@
     font-size: 25px;
     background-color: white;
     position: relative;
-    left: 55rem;
+    left: 56rem;
     top: -11rem;
     width: 140px;
     font-weight: lighter;
@@ -76,7 +76,7 @@
     font-size: 12px;
     background-color: white;
     position: relative;
-    left: 27rem;
+    left: 28rem;
     top: -14rem;
     width: 164px;
     border-bottom: 1px solid silver;
@@ -88,8 +88,8 @@
     background-color: white;
 }
 .btn2{
-    height: 35px;
-    width: 169px;
+    height: 27px;
+    width: 168px;
     border-radius: 25px;
     font-size: 20px;
     color: white;
@@ -97,5 +97,86 @@
     border: none;
     position: relative;
     left: 54rem;
-    top: -4rem;
+    top: -8rem;
+}
+
+.contador{
+    display: flex;
+    position: relative;
+    left: 30rem;
+    background-color: transparent;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.btn-numer{
+    width: 32px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.btn-más{
+    background-color: #D9D9D9;
+    width: 32px;
+    height: 40px;
+    border-radius: 5%;
+    border: transparent;
+}
+.btn-menos{
+    background-color: #D9D9D9;
+    width: 32px;
+    height: 40px;
+    border-radius: 5%;
+    border: transparent;
+}
+
+.btn-numer input{
+    background-color: #F1EDED;
+    width: 5px;
+    height: 20px;
+    border-radius: 5%;
+    border: transparent;
+}
+.btn-menos button{
+    font-size: 15px;
+}
+.numer-produ{
+    justify-content: center;
+}
+.contador p{
+    background-color: transparent;
+    color: dimgray;
+    position: relative;
+    top: 3rem;
+    right: 122.5px;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.color-1{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+.color-2{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+.color-3{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+.color-4{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+.colores{
+    background-color: transparent;
+    position: relative;
+    left: 2rem;
+    top: 1rem;
 }
