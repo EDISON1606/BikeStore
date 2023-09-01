@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  .footer {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+   
+    position: absolute;
+    width: 100%;
+  }
+  .footer .img-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .img-redes a {
+    margin-right: 10px;
+  }
+  
+  .footer .img-redes img {
+    width: 35px;
+    height: 35px;
+  }
+ 
+  .footer .text-terminos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .footer .text-terminos a {
+    margin-right: 40px;
+  }
+  
+  .container {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Media queries para móvil */
+  @media only screen and (max-width: 600px) {
+    .footer {
+      height: 250px;
+      text-align: center;
+    }
+  
+    .footer .img-redes {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left:10px;
+    }
+    .footer .text-terminos {
+        margin-top: 0px;
+      }
+    #equis{
+        height: 45px;
+        width: 45px;
+    }
+    #face{
+        height: 40px;
+        width: 40px;
+    }
+    #inst{
+        height: 40px;
+        width: 40px;
+    }
+    .footer .img-redes a {
+      margin-right: 0px;
+      margin-left: 10px;
+    
+    }
+  
+    .text-terminos {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .text-terminos a {
+      margin-bottom: 10px;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    .footer .img-redes img {
+      width: 32px;
+      height: 32px;
+    }
+   
+  }
+  
+  /* Media queries para monitor */
+  @media only screen and (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+      padding: 0px 20px;
+    }
+  }
+  .footer .img-redes img {
+    width: 55px;
+    height: 55px;
+    margin-right: 50px;
+  }
+  .footer .img-redes img {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .X {
+    margin-top: 12px;
+  }
+  .instagram {
+    margin-top: 14px;
+  }

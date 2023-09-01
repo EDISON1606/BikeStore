@@ -6,6 +6,8 @@ import Iniciosesion from "./Components/Iniciosesion";
 import "./CSS/InicioS.css";
 import Registro from './Components/Registro';
 import "./CSS/Registro.css";
+import Footer from './Components/Footer';
+import "./CSS/footer.css";
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
         <Route path='/Registro' element={<Registro/>}/>
       </Routes>
     </Router>
+    <Footer/>
     </>
   )
 }
