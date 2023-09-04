@@ -1,11 +1,12 @@
 import React from 'react'
 import Bici1 from '../img/bici1 31.png'
+import Bici2 from '../img/bici2 31.png'
 
 export default function Cards_detail (){
 
     return(
         <div className='cards_detail'>
-         <img src={Bici1} className='bici2'/>
+         <img src={Bici1} className='bici1'/>
          <h1>Bicicleta de montaña marlin 5  2022</h1>
          <h2>Vendido por BikeStore</h2>
          <h3>$ 2.299.000</h3>  
@@ -60,7 +61,60 @@ export default function Cards_detail (){
                     </div>
      
                 </div>      
-                <button className='btn2'>Agregar Carrito</button>                              
+                <button className='btn2'>Agregar Carrito</button>  
+
+
+                <div className='informe'>
+                    <div className='informe_bike'>
+                        <h1>Información del articulo</h1>
+                        <li>
+                            <p></p>
+                            <p></p>
+                        </li>
+                        <h1>Especificaciones</h1>
+                    </div>
+                </div>
+
+                     <div className='carousel_princ'>
+                      <div className='Carousel'>
+                    <div className='product_caro'>
+                    <img src={Bici2} className='bici2' />
+                        <h4>Bicicleta de montaña marlin 5  2022</h4>
+                        <p>Próximamente</p>
+                        <h3>$ 2.299.000</h3>
+                        <button className='btn3'>Agregar Carrito</button>
+                    </div>
+                    <div className='product_caro'>
+                    <img src={Bici2} className='bici2' />
+                        <h4>Bicicleta de montaña marlin 5  2022</h4>
+                        <p>Próximamente</p>
+                        <h3>$ 2.299.000</h3>
+                        <button className='btn3'>Agregar Carrito</button>
+                    </div>
+                    <div className='product_caro'>
+                    <img src={Bici2} className='bici2' />
+                        <h4>Bicicleta de montaña marlin 5  2022</h4>
+                        <p>Próximamente</p>
+                        <h3>$ 2.299.000</h3>
+                        <button className='btn3'>Agregar Carrito</button>
+                    </div>
+                    <div className='product_caro'>
+                    <img src={Bici2} className='bici2' />
+                        <h4>Bicicleta de montaña marlin 5  2022</h4>
+                        <p>Próximamente</p>
+                        <h3>$ 2.299.000</h3>
+                        <button className='btn3'>Agregar Carrito</button>
+                    </div>
+                    <div className='product_caro'>
+                    <img src={Bici2} className='bici2' />
+                        <h4>Bicicleta de montaña marlin 5  2022</h4>
+                        <p>Próximamente</p>
+                        <h3>$ 2.299.000</h3>
+                        <button className='btn3'>Agregar Carrito</button>
+                    </div>
+
+                </div>
+                </div>             
         </div>
         
     );

@@ -32,7 +32,7 @@
     top: -13rem;
     width: 302px;
 }
-.bici2 {
+.bici1 {
     width: 300px;
     position: relative;
     left: 7rem;
@@ -179,4 +179,108 @@
     position: relative;
     left: 2rem;
     top: 1rem;
+}
+.product_caro h4{
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+  
+}
+.product_caro{
+    width: 215px;
+    height: 325px;
+    background-color: #FFFF;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 5px;
+    padding: 10px;
+    margin-top: 35px;
+    margin-right: 5px;
+    display: grid;
+    gap: 5px;
+}
+.btn3{
+    background-color: #0097A7;
+    color: white;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: auto;
+    border: transparent;
+    height: 30px;
+    width: 180px;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 15px;
+    display: flex;
+}
+.bici2{
+    width: 180px;
+    margin: auto;
+}
+.product_caro h3{
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 15px;
+    font-style: italic;
+    left: 2rem;
+    position: relative;
+    top: 0rem;
+}
+.product_caro p{
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0097A7;
+    font-size: 15px;
+    position: relative;
+    font-style: italic;
+    top: 0rem;
+}
+.Carousel{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    margin-top: 1px;
+   
+}
+.carousel_princ{
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+    width: 1245px;
+    height: 480px;
+    left: 0rem;
+    top: -3rem;
+
+}
+.informe{
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+    width: 1245px;
+    height: 770px;
+    left: 0rem;
+    top: -3rem;
+}
+.informe_bike h1{
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    position: relative;
+    left: 3rem;
+    top: 9rem;
+    width: 660px;
+    color: #0097A7;
+    border-bottom: 1px solid silver;
+}
+
+.informe_bike p{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    position: relative;
+    left: 3rem;
+    top: 9rem;
+    width: 660px;
 }
