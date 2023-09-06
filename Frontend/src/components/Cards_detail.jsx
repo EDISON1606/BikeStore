@@ -1,9 +1,11 @@
-import React from 'react'
-import Bici1 from '../img/bici1 31.png'
-import Bici2 from '../img/bici2 31.png'
+import React from 'react';
+import Bici1 from '../img/bici1 31.png';
+import Bici2 from '../img/bici2 31.png';
+import flecha3 from '../img/flecha-correcta.png';
+import flecha4 from '../img/flecha-izquierda.png';
 
 export default function Cards_detail (){
-
+  
     return(
         <div className='cards_detail'>
          <img src={Bici1} className='bici1'/>
@@ -65,17 +67,14 @@ export default function Cards_detail (){
 
 
                 <div className='informe'>
-                    <div className='informe_bike'>
                         <h1>Información del articulo</h1>
-                        <li>
-                            <p></p>
-                            <p></p>
-                        </li>
+        
                         <h1>Especificaciones</h1>
-                    </div>
                 </div>
 
-                     <div className='carousel_princ'>
+                <div className='carousel_princ'>
+                        <h1>Recomendados</h1>
+                        <button className="btn-initiation" ><img src={flecha4} /></button>
                       <div className='Carousel'>
                     <div className='product_caro'>
                     <img src={Bici2} className='bici2' />
@@ -112,10 +111,9 @@ export default function Cards_detail (){
                         <h3>$ 2.299.000</h3>
                         <button className='btn3'>Agregar Carrito</button>
                     </div>
-
+                    <button className="btn-end"><img src={flecha3} /></button>             
                 </div>
-                </div>             
-        </div>
-        
+                </div>       
+                </div>      
     );
 };

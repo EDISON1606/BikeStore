@@ -25,7 +25,7 @@ export default function Cards() {
     btnSiguiente.addEventListener('click', () => {
       if (pagina < 50) {
         pagina += 1;
-        // fetchData(pagina); // Debes proporcionar la función fetchData
+     
         updatePageNumber(pagina);
         window.scrollTo(0, 0);
       }
@@ -34,14 +34,14 @@ export default function Cards() {
     btnAnterior.addEventListener('click', () => {
       if (pagina > 1) {
         pagina -= 1;
-        // fetchData(); // Debes proporcionar la función fetchData
+      
         inputelement.value = pagina;
         window.scrollTo(0, 0);
       } else {
         alert('No hay más páginas atrás');
       }
     });
-  }, []); // Agregué un arreglo vacío para ejecutar el efecto una sola vez
+  }, []); 
 
   function updatePageNumber(page) {
     const inputelement = document.querySelector('.numeropagina');
