@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #d8d8d8;
+}
+
+.bicicleta img {
+    width: 150px;
+    height: 150px;
+}
+
+.carta-carrito {
+    background: white;
+    height: 250px;
+    width: 90%;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.bicicleta {
+    flex: none; /* Evita que la imagen se expanda */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.bicicleta img {
+    align-self: flex-star; /* Alinea la imagen en la parte superior */
+}
+.info{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    margin-top: -60px;
+}
+.info h1 {
+    margin-top: -60px; /* Hace que el texto ocupe el espacio restante */
+    padding: 50px; /* Espacio entre el texto y los bordes del contenedor */
+}
+.info p{
+    margin-top: -50px;
+   margin-left: 50px;
+}
+

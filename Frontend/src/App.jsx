@@ -7,6 +7,8 @@ import "./CSS/InicioS.css";
 import Registro from './Components/Registro';
 import "./CSS/Registro.css";
 import Footer from './Components/Footer';
+import Carrito from './Components/Carrito'
+import "./CSS/Carrito.css";
 import "./CSS/footer.css";
 
 
@@ -19,6 +21,7 @@ function App() {
       <Routes>
         <Route path='/Inicio' element={<Iniciosesion/>}/>
         <Route path='/Registro' element={<Registro/>}/>
+        <Route path='/Carrito' element={<Carrito/>}/>
       </Routes>
     </Router>
     <Footer/>

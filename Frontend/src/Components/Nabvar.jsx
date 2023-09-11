@@ -48,7 +48,7 @@ export default function Nabvar() {
                         </select></abbr>
                       </div>
                       <div className="car">
-                    <abbr title="Carrito2"><a href="/"><img src={Carrito} id="Carrito"  /></a></abbr>
+                    <abbr title="Carrito2"><a href="./Carrito"><img src={Carrito} id="Carrito"  /></a></abbr>
                     </div>
                    
       <header className="App-header">
@@ -84,7 +84,7 @@ export default function Nabvar() {
                     <abbr title="Favoritos"><a href="/"><img src={Logomeg} id="logomeg"  /></a></abbr>
                     </li>
                     <li className="car">
-                    <abbr title="Carrito"><a href="/"><img src={Carrito} id="Carrito"  /></a></abbr>
+                    <abbr title="Carrito"><a href="./Carrito"><img src={Carrito} id="Carrito"  /></a></abbr>
                     </li>
                 </ul>
             </div>
