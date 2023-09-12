@@ -1,0 +1,15 @@
+.contenedor-resumen{
+    position: relative;
+}
+.carta-resumen {
+    background: white;
+    height: 600px;
+    width: 350px;
+    border-radius: 15px;
+    position: absolute;
+    margin: 5%;
+   top: 4.5rem;
+   left: 87rem;
+   display: block;
+    text-align: center;
+}

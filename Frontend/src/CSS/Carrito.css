@@ -10,17 +10,24 @@ body {
     width: 150px;
     height: 150px;
 }
-
+.contenedor-todo {
+    position: relative;
+}
+.titulo{
+    position: absolute;
+    top: -3rem;
+    left: 6.5rem;
+}
 .carta-carrito {
     background: white;
     height: 250px;
-    width: 90%;
+    width: 69%;
     display: flex;
     border-radius: 15px;
     overflow: hidden;
     position: relative;
-    margin: auto;
-    margin-top: 40px;
+    margin: 5%;
+    margin-top: 100px;
 }
 
 .bicicleta {

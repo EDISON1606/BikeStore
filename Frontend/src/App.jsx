@@ -7,7 +7,7 @@ import "./CSS/InicioS.css";
 import Registro from './Components/Registro';
 import "./CSS/Registro.css";
 import Footer from './Components/Footer';
-import Carrito from './Components/Carrito'
+import Carrito from './Components/carrito/Carrito';
 import "./CSS/Carrito.css";
 import "./CSS/footer.css";
 
