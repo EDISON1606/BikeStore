@@ -31,6 +31,7 @@ const Registro = () => {
       });
       if (response.ok){
         console.log(DataRegister);
+        alert("Usuario registrado con exito")
         console.log("Usuario registrado con exito")
       }
       else {

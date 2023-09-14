@@ -13,3 +13,21 @@
    display: block;
     text-align: center;
 }
+.carta-resumen h1{
+    margin-top: 10px;
+}
+.info-res{
+    margin-top:100px;
+    display:block;   
+}
+.info-res h2{
+    margin-top: 50px;
+}
+.boton-c{
+ margin-top: 100px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    left: 50px;
+    width: 250px;
+}
