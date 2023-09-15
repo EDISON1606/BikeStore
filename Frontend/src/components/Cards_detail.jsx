@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Bici1 from '../img/bici1 31.png';
 import Bici2 from '../img/bici2 31.png';
 import flecha3 from '../img/flecha-correcta.png';
 import flecha4 from '../img/flecha-izquierda.png';
 
 export default function Cards_detail (){
-  
+    
+  const [productCount, setProductCount] = useState(1);
+
+ 
+  const incrementProductCount = () => {
+    if (productCount < 20) {
+      setProductCount(productCount + 1);
+    } else {
+      alert('No puedes agregar más de 20 productos');
+    }
+  };
+
+
+  const decrementProductCount = () => {
+    if (productCount > 1) {
+      setProductCount(productCount - 1);
+    }
+  };
+
     return(
         <div className='cards_detail'>
          <img src={Bici1} className='bici1'/>
@@ -45,20 +63,14 @@ export default function Cards_detail (){
                         </select>
                     </li>
                     </ul>
-                    <div className='colores'>
-                    <button className='color-1'></button>
-                        <button className='color-2'></button>
-                        <button className='color-3'></button>
-                        <button className='color-4'></button>
-                        </div>
                     <div className='contador'>
-                    <button className="btn-menos">-</button>
-                    
-                    <div className='btn-numer'>
-                        <input type="text" value="1" className="numer-produ" disabled="true"></input>
-                    </div>
-                 
-                    <button className="btn-más">+</button>
+                  
+  <button className="btn-menos" onClick={decrementProductCount}>-</button>
+        <div className='btn-numer'>
+          <input type="text" value={productCount} className="numer-produ" disabled="true"></input>
+        </div>
+        <button className="btn-más" onClick={incrementProductCount}>+</button>
+       
                     <p>Máximo 20 Unidades</p>
                     </div>
      
