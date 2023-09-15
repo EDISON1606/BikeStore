@@ -1,0 +1,506 @@
+.cards_detail {
+
+    background-color: white;
+    border-radius: 25px;
+    width: 1245px;
+    height: 500px;
+    left: 18rem;
+    top: 8rem;
+    position: absolute;
+}
+.cards_detail h1 {
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    position: relative;
+    left: 28rem;
+    top: -15rem;
+    width: 660px;
+}
+.menu_detail h6{
+    font-size: 14px;
+    background-color: white;
+    position: relative;
+    right: 1rem;
+    top: 1rem;
+    width: 64px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu_detail{
+    background-color: white;
+    position: relative;
+    left: 26rem;
+    top: -13rem;
+    width: 302px;
+}
+.bici1 {
+    width: 300px;
+    position: relative;
+    left: 7rem;
+    border-right: 1px solid silver;
+    top: 3rem;
+}
+
+.list_dos{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 60px;
+    margin-left: 55px;
+    background-color: transparent;
+}
+.talla{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: black;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    left: 2rem;
+   
+}
+.cards_detail h3{
+    font-size: 25px;
+    background-color: white;
+    position: relative;
+    left: 56rem;
+    top: -11rem;
+    width: 140px;
+    font-weight: lighter;
+
+}
+.cards_detail h2 {
+    font-size: 12px;
+    background-color: white;
+    position: relative;
+    left: 28rem;
+    top: -14rem;
+    width: 164px;
+    border-bottom: 1px solid silver;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: dimgray;
+}
+.menu_detail li{
+    background-color: white;
+}
+.btn2{
+    height: 27px;
+    width: 168px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
+    background: #0097A7;
+    border: none;
+    position: relative;
+    left: 54rem;
+    top: -10rem;
+    cursor: pointer;
+}
+
+.contador{
+    display: flex;
+    position: relative;
+    left: 30rem;
+    background-color: transparent;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.btn-numer{
+    width: 32px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.btn-más{
+    background-color: #D9D9D9;
+    width: 32px;
+    height: 40px;
+    border-radius: 5%;
+    border: transparent;
+}
+.btn-menos{
+    background-color: #D9D9D9;
+    width: 32px;
+    height: 40px;
+    border-radius: 5%;
+    border: transparent;
+}
+
+.btn-numer input{
+    background-color: #F1EDED;
+    width: 5px;
+    height: 20px;
+    border-radius: 5%;
+    border: transparent;
+}
+.btn-menos button{
+    font-size: 15px;
+}
+.numer-produ{
+    justify-content: center;
+}
+.contador p{
+    background-color: transparent;
+    color: dimgray;
+    position: relative;
+    top: 3rem;
+    right: 122.5px;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.color-1{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+.color-2{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+.color-3{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+.color-4{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+.colores{
+    background-color: transparent;
+    position: relative;
+    left: 2rem;
+    top: 1rem;
+}
+.product_caro h4{
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+  
+}
+.product_caro{
+    width: 215px;
+    height: 325px;
+    background-color: #FFFF;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 5px;
+    padding: 10px;
+    margin-top: 35px;
+    margin-right: 5px;
+    display: grid;
+    gap: 5px;
+}
+.btn3{
+    background-color: #0097A7;
+    color: white;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: auto;
+    border: transparent;
+    height: 30px;
+    width: 180px;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 15px;
+    display: flex;
+    cursor: pointer;
+}
+.bici2{
+    width: 180px;
+    margin: auto;
+}
+.product_caro h3{
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 15px;
+    font-style: italic;
+    left: 2rem;
+    position: relative;
+    top: 0rem;
+}
+
+.Carousel{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    background-color: white;
+   
+}
+.carousel_princ{
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+    width: 1245px;
+    height: 480px;
+    top: 2rem;
+}
+.informe{
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+    width: 1245px;
+    height: 770px;
+    left: 0rem;
+    
+}
+
+.informe h1{
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    position: relative;
+    left: 3rem;
+    top: 9rem;
+    width: 660px;
+    color: #0097A7;
+    border-bottom: 1px solid silver;
+}
+
+.informe p{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    position: relative;
+    left: 3rem;
+    top: 9rem;
+    width: 660px;
+}
+.carousel_princ h1{
+    font-size: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    top: 3rem;
+    left: 4rem;
+}
+.btn-end {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: transparent;
+    top: 9rem;
+    position: relative;
+    right: 1rem;
+    
+}
+.btn-initiation {
+    background-color:white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: transparent;
+    top: 11rem;
+    position: relative;
+
+}
+.btn-end img{
+    display: flex;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+}
+.btn-initiation img{
+    display: flex;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+
+}
+@media screen and (max-width:1669px) {
+
+}
+@media screen and (max-width:1300px){
+
+}
+@media screen and (max-width: 1284px){
+
+ 
+    }
+    @media screen and (max-width:1050px){
+        
+    }
+@media screen and (max-width: 1024px){
+
+
+}
+@media screen and (max-width: 912px){
+
+}
+@media screen and (max-width: 820px){
+
+}
+
+@media screen and (max-width: 770px){
+    
+}
+
+ @media screen and (max-width: 600px){
+
+}
+@media screen and (max-width: 540px){
+
+}
+@media screen and (max-width: 415px){
+
+}
+
+@media screen and (max-width: 390px){
+
+        
+}
+@media screen and (max-width: 375px){
+    .cards_detail {
+        position: relative;
+        width: 1213px;
+        height: 640px;
+        left: 1rem;
+        top: 3rem;
+    }
+    .cards_detail h1 {
+        font-size: 40px;
+    }
+    .cards_detail h2 {
+        font-size: 20px;
+        width: 260px;
+}
+.bici1 {
+    width: 342px;
+    position: relative;
+    left: 4rem;
+    border-right: 1px solid silver;
+    top: 5rem;
+}
+.menu_detail h6 {
+    font-size: 30px;
+}
+.talla {
+    font-size: 23px;
+    left: 8rem;
+    top: -1rem;
+}
+.color-1 {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+.color-2 {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+.color-3{
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+.color-4{
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
+.btn2{
+    height: 35px;
+    width: 220px;
+    font-size: 30px;
+    position: relative;
+    left: 54rem;
+    top: -16rem;
+}
+
+.cards_detail h3 {
+    font-size: 30px;
+    position: relative;
+    left: 56rem;
+    top: -13rem;
+    width: 143px;
+    
+}
+.contador {
+    display: flex;
+    position: relative;
+    left: 31rem;
+    background-color: transparent;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    top: -4rem;
+}
+.menu_detail {
+    top: -15rem;
+}
+
+.Carousel {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: 1px;
+    background-color: white;
+}
+.product_caro h3 {
+    font-size: 23px;
+    left: 3rem;
+    position: relative;
+    top: 0rem;
+}
+.product_caro {
+    width: 250px;
+    height: 325px;
+    padding: 10px;
+    margin-top: 35px;
+
+}
+.carousel_princ{
+    position: relative;
+    width: 1213px;
+    left: 0rem;
+    top: 1rem;
+}
+.bici2 {
+    width: 205px;
+    margin: auto;
+}
+.product_caro h4 {
+
+    font-size: 21px;
+}
+.product_caro p {
+
+    font-size: 20px;
+}
+.informe{
+    position: relative;
+    width: 1213px;
+    left: 0rem;
+    top: -4rem; 
+}
+.informe h1 {
+    font-size: 34px;
+    left: 4rem;
+    top: 3rem;
+}
+}
+
+@media screen and (max-width: 360px){
+
+}
+@media screen and (max-width: 280px){
+    
+}

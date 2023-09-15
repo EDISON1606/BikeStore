@@ -17,15 +17,30 @@ const Carrito = () => {
           <div className="info">
             <h1>Bicicleta de montaña marlin 5 2022</h1>
             <br></br>
-            <p>
-              Vendidio por BikeStore Talla
+            <h2>
+              Vendidio por BikeStore
               <br></br>
               <br></br>
               $2.299.000
-            </p>
+            </h2>
+            <div className="info2">
+              <h2>Talla: M</h2>
+              <h2 className="color-info">Color: Rojo</h2>
+              <div className='contador'>
+                    <button className="btn-menos">-</button>
+                    
+                    <div className='btn-numer'>
+                        <input type="text" value="1" className="numer-produ" disabled="true"></input>
+                    </div>
+                 
+                    <button className="btn-más">+</button>
+                    <p>Máximo 20 Unidades</p>
+                    </div>
+            </div>
           </div>
         </div>
       </div>
+     
       <ResumenC></ResumenC>
     </>
   );

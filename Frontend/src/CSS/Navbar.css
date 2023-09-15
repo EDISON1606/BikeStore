@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #f1eded;
-}
+
 
 .navbar{
     display: flex;
@@ -22,7 +20,17 @@ body{
     background-position: center;
     margin-block-end: 35px;
 }
-select{
+.ini select{
+    height: 30px;
+    width: 30px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-radius: none;
+    cursor: pointer;
+}
+.ini2 select{
     height: 30px;
     width: 30px;
     border: none;
@@ -177,19 +185,6 @@ select{
     z-index: 1;
 }
 
-.opcion{
-    font-family: "hyperspace-race-cap-variable",sans-serif;
-    background-color: #001d52;
-    
-}
-.A{
-    background-color: #001d52;
-    opacity: 0;
-}
-.A:hover {
-    background-color: #001d52;
-}
-
 .categorias:hover{
     cursor: pointer;
     opacity: 0.7;
@@ -309,7 +304,7 @@ ul {
         width: 25px;
         height: 25px;
     }
-    select{
+    .ini2 select{
         width: 25px;
         height: 25px;
     }

@@ -4,7 +4,7 @@ import Logoin from "../Img/ingresar.png";
 import Logomeg from "../Img/megusta.png";
 import Carrito from "../Img/Carrito.png";
 import Lupa from "../Img/lupa.png";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Nabvar() {
 
@@ -31,7 +31,7 @@ export default function Nabvar() {
 
     return (
         <nav className="navbar">
-        <div className="logob"><img src={LogoB} id="logo" /></div>
+        <div className="logob"><Link to={"./"}><img src={LogoB} id="logo"/></Link></div>
         <div className="Contener-busqueda">
         <div className="Barra-buscas">
         <input type="search" id="Buscar" placeholder=" Busqueda"  onchange="error(event)"/>
