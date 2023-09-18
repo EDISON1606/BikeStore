@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import * as  yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form'
-
+import Footer from '../Components/Footer';
+import "../CSS/Footer.css";
 const Iniciosesion = () => {
   const schema = yup.object().shape({
 
@@ -42,6 +43,7 @@ const Iniciosesion = () => {
   }
 
   return (
+    <>
     <div className='fondo-ini2'>
       <div className="formulario">
       <h1>Bienvenido a Bike Store!</h1>
@@ -62,6 +64,8 @@ const Iniciosesion = () => {
       </form>
     </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 

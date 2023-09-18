@@ -22,6 +22,7 @@ grid-template-rows: auto 1fr auto;
   width: 100%;
   bottom: 0;
   top: 120rem;
+  position: auto;
 
 }
 .footer .img-redes {
@@ -30,7 +31,7 @@ grid-template-rows: auto 1fr auto;
   align-items: center;
 }
 .footer .img-redes a {
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .footer .img-redes img {
@@ -45,7 +46,7 @@ grid-template-rows: auto 1fr auto;
 }
 
 .footer .text-terminos a {
-  margin-right: 40px;
+  /* margin-right: 40px; */
 }
 
 .container {

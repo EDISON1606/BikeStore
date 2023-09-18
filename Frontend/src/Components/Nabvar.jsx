@@ -6,6 +6,7 @@ import Carrito from "../Img/Carrito.png";
 import Lupa from "../Img/lupa.png";
 import { Link, useNavigate } from "react-router-dom";
 
+
 export default function Nabvar() {
 
   

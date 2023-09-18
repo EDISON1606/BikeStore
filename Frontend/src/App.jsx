@@ -6,10 +6,8 @@ import Iniciosesion from "./Components/Iniciosesion";
 import "./CSS/InicioS.css";
 import Registro from './Components/Registro';
 import "./CSS/Registro.css";
-import Footer from './Components/Footer';
 import Carrito from './Components/carrito/Carrito';
 import "./CSS/Carrito.css";
-import "./CSS/footer.css";
 import Productos from './Components/Cards'
 import Detalles from './Components/Cards_detail'
 import "./CSS/Cards.css"
@@ -30,7 +28,6 @@ function App() {
         <Route path='/Registro' element={<Registro/>}/>
         <Route path='/Carrito' element={<Carrito/>}/>
       </Routes>
-    <Footer/>
     </Router>
     </>
   )

@@ -3,10 +3,14 @@ import Bici1 from '../img/bici1 31.png';
 import Bici2 from '../img/bici2 31.png';
 import flecha3 from '../img/flecha-correcta.png';
 import flecha4 from '../img/flecha-izquierda.png';
+import Footer from '../Components/Footer';
+import "../CSS/Footer.css";
 export default function Cards_detail (){
+    
   
     return(
         <>
+        <div className='todooo'>
         <div className='cards_detail'>
          <img src={Bici1} className='bici1'/>
          <h1>Bicicleta de montaña marlin 5  2022</h1>
@@ -95,7 +99,8 @@ export default function Cards_detail (){
                 </div>
                 </div>     
                 </div> 
-                
+                </div>
+                <Footer/>
                 </>
     );
 };

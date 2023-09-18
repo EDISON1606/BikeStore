@@ -6,28 +6,40 @@ body {
     background-color: #F1EDED;
 }
 
+.contenedor-principal-carrito{
+    display: flex;
+    justify-content: center;
+
+
+    /* separacion */
+    gap: 5rem;
+}
+
 .bicicleta img {
     width: 150px;
     height: 150px;
 }
-.contenedor-todo {
-    position: relative;
-}
+
 .titulo{
-    position: absolute;
-    top: -3rem;
-    left: 6.5rem;
+    display: flex;
+
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+.btn-menos{
+    cursor: pointer;
+}
+.btn-más{
+    cursor: pointer;
 }
 .carta-carrito {
     background: white;
     height: 250px;
-    width: 68%;
+    width: 1290px;
     display: flex;
     border-radius: 15px;
-    overflow: hidden;
-    position: relative;
-    margin: 5%;
-    margin-top: 100px;
+
+    top: 50px;
 }
 
 .bicicleta {
@@ -36,7 +48,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-left: 50px;
+    margin-left: 50px; 
 }
 
 .bicicleta img {
@@ -57,12 +69,12 @@ body {
    margin-left: 50px;
 }
 .info2{
-    position: relative;
-    left: 25rem;
-    top: -2rem;
+
+     left: 25rem;
+    top: -2rem;  
 }
 .color-info{
-    position: relative;
-    top: 5rem;
+     position: relative;
+    top: 5rem; 
 }
 

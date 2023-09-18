@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Bici from '../img/Bici 33.png';
 import flecha1 from '../img/flecha-correcta.png';
 import flecha2 from '../img/flecha-izquierda.png';
+import { Link } from 'react-router-dom';
+import Footer from '../Components/Footer';
+import "../CSS/Footer.css";
 
 export default function Cards() {
   const [showFilters, setShowFilters] = useState(false);
@@ -49,6 +52,7 @@ export default function Cards() {
   }
 
   return (
+    <>
     <div className='Principal'>
       <button className='filter-btn' onClick={toggleFilters}>
         Filtro
@@ -145,7 +149,7 @@ export default function Cards() {
                         <p>Próximamente</p>
                         <h3>$ 2.299.000</h3>
                         </a>
-                        <button className='btn'>Agregar Carrito</button>
+                        <Link to={"./Carrito"}><button className='btn'>Agregar Carrito</button></Link>
                     </div>
                     <div className='cards-products'>
                 <a href='./Detalles'>
@@ -177,5 +181,7 @@ export default function Cards() {
                     </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }

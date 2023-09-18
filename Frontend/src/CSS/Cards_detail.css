@@ -6,8 +6,9 @@
     height: 500px;
     left: 18rem;
     top: 8rem;
-    position: absolute;
+   
 }
+
 .cards_detail h1 {
     font-size: 27px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

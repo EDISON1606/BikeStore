@@ -2,6 +2,8 @@ import React from 'react';
 import * as  yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form'
+import Footer from '../Components/Footer';
+import "../CSS/Footer.css";
 
 const shema = yup.object().shape({
   nombres: yup.string().required('debes ingresar al menos tu primer nombre'),
@@ -44,6 +46,7 @@ const Registro = () => {
   }
 
   return (
+    <>
     <div className='fondo-ini'>
       <div className="formulario2">
       <h1>Registrate en Bike Store!</h1>
@@ -80,6 +83,8 @@ const Registro = () => {
       </form>
     </div>
     </div>
+     <Footer/>
+     </>
   ) 
 }
 
