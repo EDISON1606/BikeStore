@@ -14,7 +14,10 @@ body {
     /* separacion */
     gap: 5rem;
 }
-
+.contador{
+    display: flex;
+    margin-left: -60px;
+}
 .bicicleta img {
     width: 150px;
     height: 150px;
@@ -38,8 +41,8 @@ body {
     width: 1290px;
     display: flex;
     border-radius: 15px;
-
-    top: 50px;
+    margin-top: 10px;
+    
 }
 
 .bicicleta {
@@ -61,17 +64,17 @@ body {
     margin-top: -60px;
 }
 .info h1 {
-    margin-top: -60px; /* Hace que el texto ocupe el espacio restante */
-    padding: 50px; /* Espacio entre el texto y los bordes del contenedor */
+    margin-top: -80px; /* Hace que el texto ocupe el espacio restante */
+    margin-left: -12px;
+    padding: 60px; /* Espacio entre el texto y los bordes del contenedor */
 }
 .info h2{
     margin-top: -50px;
    margin-left: 50px;
 }
 .info2{
-
-     left: 25rem;
-    top: -2rem;  
+     margin-left: 30rem;
+   margin-top: -30px;
 }
 .color-info{
      position: relative;

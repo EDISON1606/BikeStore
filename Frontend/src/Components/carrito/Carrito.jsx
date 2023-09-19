@@ -5,6 +5,25 @@ import "../../CSS/ResumenC.css";
 import Footer from "../Footer";
 
 const Carrito = () => {
+  /*
+  const [productCount, setProductCount] = useState(1);
+
+ 
+  const incrementProductCount = () => {
+    if (productCount < 20) {
+      setProductCount(productCount + 1);
+    } else {
+      alert('No puedes agregar más de 20 productos');
+    }
+  };
+
+
+  const decrementProductCount = () => {
+    if (productCount > 1) {
+      setProductCount(productCount - 1);
+    }
+  };
+  */
   return (
     <>
     <div className="contenedor-titulo-cantidad">
