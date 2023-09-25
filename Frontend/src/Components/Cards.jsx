@@ -54,10 +54,10 @@ export default function Cards() {
   return (
     <>
     <div className='Principal'>
+      <div className={`menu_card ${showFilters ? 'show' : ''}`}>
       <button className='filter-btn' onClick={toggleFilters}>
         Filtro
       </button>
-      <div className={`menu_card ${showFilters ? 'show' : ''}`}>
       <ul className='list_uno'>
                     <li>
                         <h6>Categorias</h6>
@@ -115,6 +115,10 @@ export default function Cards() {
                     </div>
                 </ul>
       </div>
+      <div className='serparadorcards'>
+
+      <div className='separadoruno'>
+
       <div className='opcion_dos'>
       <li>
                     <h4>Ordenado por</h4>
@@ -135,11 +139,14 @@ export default function Cards() {
       </div>
       <div className='pagination'>
       <h3>Pagina:</h3>
+                    <div className='mov-paginacion'>
                     <button className="btn-inicio"><img src={flecha2} /></button>
                     <div className='btn-selector'>
                         <input type="text" value="1" className="numeropagina" disabled="true"></input>
                     </div>
                     <button className="btn-final"><img src={flecha1} /></button>
+                    </div>
+      </div>
       </div>
       <div className='products'>
                        <div className='cards-products'>
@@ -181,6 +188,7 @@ export default function Cards() {
                     </div>
       </div>
     </div>
+      </div>
     <Footer/>
     </>
   );

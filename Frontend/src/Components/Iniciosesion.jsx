@@ -15,6 +15,8 @@ const Iniciosesion = () => {
 
   async function Login(dataLogin){
       console.log(dataLogin)
+      let correo = dataLogin.correo
+      let contraseña = dataLogin.contraseña
      try {
        const response = await fetch('http://localhost:3060/clientes', {
          method:'POST',
@@ -22,8 +24,8 @@ const Iniciosesion = () => {
            "Content-Type": "application/json"
          },
          body: JSON.stringify({
-           correo,
-           contraseña
+            correo,
+            contraseña
          })
        })
        .then((response)=> {

@@ -4,6 +4,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form'
 import Footer from '../Components/Footer';
 import "../CSS/Footer.css";
+import { Link, useNavigate } from 'react-router-dom';
 
 const shema = yup.object().shape({
   nombres: yup.string().required('debes ingresar al menos tu primer nombre'),
@@ -14,6 +15,8 @@ const shema = yup.object().shape({
 })
 
 const Registro = () => {
+
+  const navigate = useNavigate();
 
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(shema),
@@ -34,9 +37,11 @@ const Registro = () => {
       if (response.ok){
         console.log(DataRegister);
         alert("Usuario registrado con exito")
+        
         console.log("Usuario registrado con exito")
       }
       else {
+        alert("Usuario ya existe")
         console.log("Error al registrar Front")
       }
     }
