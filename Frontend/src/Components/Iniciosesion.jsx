@@ -4,7 +4,13 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form'
 import Footer from '../Components/Footer';
 import "../CSS/Footer.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
+
 const Iniciosesion = () => {
+  const [isRegistered, setIsRegistered] = useState(false);
+  const navigate = useNavigate();
   const schema = yup.object().shape({
 
   })
@@ -18,7 +24,7 @@ const Iniciosesion = () => {
       let correo = dataLogin.correo
       let contraseña = dataLogin.contraseña
      try {
-       const response = await fetch('http://localhost:3060/clientes', {
+       const response = await fetch('http://localhost:3060/inicio', {
          method:'POST',
          headers: {
            "Content-Type": "application/json"
@@ -34,8 +40,23 @@ const Iniciosesion = () => {
          }
          if (response.ok) {
            console.log('Bienvenido a BikeStore')
+           toast.success("Bienvenido a BikeStore")
+           setIsRegistered(true);
+        setTimeout(() => {
+          navigate("/");
+        }, 3000);
          } else if(response.status === 401){
            console.log('El correo o la contraseña son incorrectas')
+           toast.error('El correo o la contraseña son incorrectas', {
+            position: "top-center",
+            autoClose: 2050,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "light",
+            closeButton: false,
+            });
          }
        })
        .catch((err) => console.log('hay un err', err))
@@ -58,15 +79,27 @@ const Iniciosesion = () => {
           <input type="password" placeholder=' ' name="contraseña" {...register("contraseña")}/>
             <label>Contraseña</label>
         </div>
-        <div className='recordar'><a href="#">Restablecer contraseña</a></div>
         <input type="submit" value="Ingresar"/>
         <div className='Registrarse'>
-        ¿Aun no tienes cuenta? <a href="Registro">Registrate</a>
+        ¿Aun no tienes cuenta? <a href="Registro">Registrate aqui</a>
         </div>
       </form>
     </div>
     </div>
     <Footer/>
+    <ToastContainer
+position="top-center"
+autoClose={2050}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick={false}
+rtl={false}
+pauseOnFocusLoss
+draggable={false}
+pauseOnHover={false}
+theme="light"
+limit={1}
+/>
     </>
   )
 }

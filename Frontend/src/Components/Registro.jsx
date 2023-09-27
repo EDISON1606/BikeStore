@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as  yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form'
 import Footer from '../Components/Footer';
 import "../CSS/Footer.css";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const shema = yup.object().shape({
   nombres: yup.string().required('debes ingresar al menos tu primer nombre'),
@@ -16,7 +18,9 @@ const shema = yup.object().shape({
 
 const Registro = () => {
 
+  const [isRegistered, setIsRegistered] = useState(false);
   const navigate = useNavigate();
+  
 
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(shema),
@@ -25,9 +29,10 @@ const Registro = () => {
 
   async function onSubmit (DataRegister) {
     console.log(DataRegister)
+  
 
     try{
-      const response = await fetch ('http://localhost:3060/clientes' , {
+      const response = await fetch ('http://localhost:3060/registro' , {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -36,19 +41,35 @@ const Registro = () => {
       });
       if (response.ok){
         console.log(DataRegister);
-        alert("Usuario registrado con exito")
-        
+        toast.success("Usuario registrado con éxito");
         console.log("Usuario registrado con exito")
+        setIsRegistered(true);
+        setTimeout(() => {
+          navigate("/Inicio");
+        }, 3000);
       }
+      
       else {
-        alert("Usuario ya existe")
+       
         console.log("Error al registrar Front")
+        toast.error('Usuario ya existe', {
+          position: "top-center",
+          autoClose: 2050,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          theme: "light",
+          closeButton: false,
+          });
       }
     }
+    
     catch(error){
       console.error("Error al conectar con el servidor", error)
     }
   }
+  
 
   return (
     <>
@@ -89,6 +110,20 @@ const Registro = () => {
     </div>
     </div>
      <Footer/>
+     <ToastContainer
+position="top-center"
+autoClose={2050}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick={false}
+rtl={false}
+pauseOnFocusLoss
+draggable={false}
+pauseOnHover={false}
+theme="light"
+limit={1}
+closeButton={false}
+/>
      </>
   ) 
 }
