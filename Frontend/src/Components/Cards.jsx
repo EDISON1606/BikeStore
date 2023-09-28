@@ -165,7 +165,7 @@ export default function Cards() {
   {products.map((product) => (
     <div className='cards-products' key={product.id}>
       <a href={`./Detalles/${product.nombre}`}>
-        <img src={product.ruta} className='bici' />
+        <img src={product.ruta} className='bici' width={"180px"} height={"120px"}/>
         <h2>{product.nombre}</h2>
         <p>{product.marca}</p>
         <h3>${product.precio}</h3>
@@ -173,35 +173,7 @@ export default function Cards() {
       <Link to={"./Carrito"}><button className='btn'>Agregar Carrito</button></Link>
     </div>
   ))}
-                    <div className='cards-products'>
-                <a href='./Detalles'>
-                        <img src={Bici} className='bici' />
-                        <h2>Bicicleta de montaña marlin 5  2022</h2>
-                        <p>Próximamente</p>
-                        <h3>$ 2.299.000</h3>
-                        </a>
-                        <button className='btn'>Agregar Carrito</button>
-                    </div>
-                   
-                    <div className='cards-products'>
-                <a href='./Detalles'>
-                        <img src={Bici} className='bici' />
-                        <h2>Bicicleta de montaña marlin 5  2022</h2>
-                        <p>Próximamente</p>
-                        <h3>$ 2.299.000</h3>
-                        </a>
-                        <button className='btn'>Agregar Carrito</button>
-                    </div>
-                    <div className='cards-products'>
-                <a href='./Detalles'>
-                        <img src={Bici} className='bici' />
-                        <h2>Bicicleta de montaña marlin 5  2022</h2>
-                        <p>Próximamente</p>
-                        <h3>$ 2.299.000</h3>
-                        </a>
-                        <button className='btn'>Agregar Carrito</button>
-                    </div>
-                    </div>
+       </div>
       </div>
     </div>
     <Footer/>

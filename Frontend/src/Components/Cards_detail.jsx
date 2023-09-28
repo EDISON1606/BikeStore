@@ -100,7 +100,7 @@ export default function Cards_detail (){
                 </div>     
                 </div> 
                 </div>
-                <Footer/>
+               
                 </>
     );
 };

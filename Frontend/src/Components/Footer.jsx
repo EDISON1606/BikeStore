@@ -20,12 +20,14 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="text-terminos">
-            <a>Términos y condiciones</a>
-          </div>
         </div>
 
-        <div className="textcopy">© BikeStore Todos los derechos reservados.</div>
+        <div className="textcopy">
+          <div className="terminos">
+        <a>Términos y condiciones</a>
+        </div>© BikeStore Todos los derechos reservados.
+        
+        </div>
       </footer>
     </>
   ); 

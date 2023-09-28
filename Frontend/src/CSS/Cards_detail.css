@@ -5,8 +5,8 @@
     width: 1245px;
     height: 500px;
     left: 18rem;
-    top: 8rem;
-   
+    top: 5rem;
+   position: relative;
 }
 
 .cards_detail h1 {

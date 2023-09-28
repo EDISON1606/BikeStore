@@ -104,7 +104,7 @@ const Iniciosesion = () => {
         <input type="submit" value="Ingresar"/>
               </form>
               <div className='Registrarse'>
-                ¿Aún no tienes cuenta? <Link to="Registro">Regístrate aquí</Link>
+                ¿Aún no tienes cuenta? <Link to="/Registro">Regístrate aquí</Link>
               </div>
             </>
           )}
@@ -122,6 +122,7 @@ const Iniciosesion = () => {
         draggable={false}
         pauseOnHover={false}
         theme="light"
+        closeButton={false}
         limit={1}
       />
     </>
