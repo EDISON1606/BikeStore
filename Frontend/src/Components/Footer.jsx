@@ -22,8 +22,6 @@ export default function Footer() {
 
           <div className="text-terminos">
             <a>Términos y condiciones</a>
-            <a>Política de cookies</a>
-            <a>Política de privacidad</a>
           </div>
         </div>
 

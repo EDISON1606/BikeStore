@@ -8,6 +8,7 @@ import "../CSS/Footer.css";
 
 export default function Cards() {
   const [showFilters, setShowFilters] = useState(false);
+  const [products, setProducts] = useState([]); 
 
   const toggleFilters = () => {
     setShowFilters(!showFilters);
@@ -50,7 +51,19 @@ export default function Cards() {
     const inputelement = document.querySelector('.numeropagina');
     inputelement.value = page;
   }
-
+  useEffect(() => {
+    fetch('http://localhost:3060/Products')
+      .then((response) => response.json())
+      .then((data) => {
+        // Aquí deberías guardar los datos obtenidos en el estado del componente
+        // Por ejemplo, puedes tener un estado como "products" para guardar los productos.
+        setProducts(data);
+      })
+      .catch((error) => {
+        console.error('Error al obtener productos:', error);
+      });
+  }, []);
+  
   return (
     <>
     <div className='Principal'>
@@ -149,15 +162,17 @@ export default function Cards() {
       </div>
       </div>
       <div className='products'>
-                       <div className='cards-products'>
-                <a href='./Detalles'>
-                        <img src={Bici} className='bici' />
-                        <h2>Bicicleta de montaña marlin 5  2022</h2>
-                        <p>Próximamente</p>
-                        <h3>$ 2.299.000</h3>
-                        </a>
-                        <Link to={"./Carrito"}><button className='btn'>Agregar Carrito</button></Link>
-                    </div>
+  {products.map((product) => (
+    <div className='cards-products' key={product.id}>
+      <a href={`./Detalles/${product.nombre}`}>
+        <img src={product.ruta} className='bici' />
+        <h2>{product.nombre}</h2>
+        <p>{product.marca}</p>
+        <h3>${product.precio}</h3>
+      </a>
+      <Link to={"./Carrito"}><button className='btn'>Agregar Carrito</button></Link>
+    </div>
+  ))}
                     <div className='cards-products'>
                 <a href='./Detalles'>
                         <img src={Bici} className='bici' />
@@ -186,9 +201,9 @@ export default function Cards() {
                         </a>
                         <button className='btn'>Agregar Carrito</button>
                     </div>
+                    </div>
       </div>
     </div>
-      </div>
     <Footer/>
     </>
   );

@@ -46,7 +46,7 @@ const Registro = () => {
         setIsRegistered(true);
         setTimeout(() => {
           navigate("/Inicio");
-        }, 3000);
+8        }, 3000);
       }
       
       else {

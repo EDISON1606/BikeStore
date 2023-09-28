@@ -5,6 +5,8 @@ import Logomeg from "../Img/megusta.png";
 import Carrito from "../Img/Carrito.png";
 import Lupa from "../Img/lupa.png";
 import { Link, useNavigate } from "react-router-dom";
+import Iniciosesion from './Iniciosesion';
+
 
 
 export default function Nabvar() {
@@ -43,6 +45,7 @@ export default function Nabvar() {
     <div className="ini2">
                     <abbr title="Opciones"><li><a href="#"><img src={Logoin} alt="inicio/registro" id="logoin"/></a></li>
                     <select id="selector" onChange={redireccionar}>
+                      
                         <option value="opcion0"></option>
                         <option value="opcion1">Inicio   </option> 
                         <option value="opcion2">Registro</option>
